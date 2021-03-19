@@ -1,0 +1,361 @@
+@media only screen and (max-width: 450px) {
+  .housing {
+    display: flex;
+    flex-direction: column;
+  }
+  .amina-hotel {
+    order: -1;
+  }
+  .hotel-the-seagull {
+    order: -4;
+  }
+  .hotel-basket {
+    order: -2;
+  }
+  .harbor-hotel {
+    order: -5;
+  }
+  .sea-hotel {
+    order: -3;
+  }
+  .cannebiere-hostel {
+    order: -6;
+  }
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .housing-span {
+    height: 175px;
+    margin: 0px;
+  }
+  .housing-marseille {
+    width: 100%;
+    height: 70%;
+  }
+  .category {
+    order: -1;
+    height: 585px;
+  }
+  .popular {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 95%;
+  }
+  .titles>h2 {
+    margin-left: 0px;
+  }
+  .popular>.housing-link {
+    height: 142px;
+  }
+  .popular>.housing-link>.housing-span {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .popular>.housing-link>.housing-span>.housing-marseille {
+    width: 40%;
+  }
+  .popular>.housing-link>.housing-span>.housing-info {
+    width: 40%;
+  }
+  .result {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .result>.housing-link {
+    width: 90%;
+    height: 200px;
+  }
+  .accommodation {
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #accommodations {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .popular {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .popular>.housing-link {
+    width: 82%;
+    height: 25%;
+  }
+  .popular>.housing-link>.housing-span {
+    flex-wrap: wrap;
+  }
+  .popular>.housing-link>.housing-span>.housing-info {
+    width: 40%;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .popular>.housing-link>.housing-span>.star-span {
+    margin-left: 15px;
+  }
+  .accommodation {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .housing-link {
+    width: 27%;
+    height: 41%;
+  }
+  .housing {
+    height: 625px;
+    margin: 0 50px;
+  }
+  .house-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    margin-left: 50px;
+  }
+  .housing-span {
+    width: 100%;
+    height: 100%;
+  }
+  .housing-marseille {
+    height: 58%;
+    width: 100%;
+  }
+  .category {
+    border-radius: 20px;
+    width: 30%;
+  }
+  .result {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+  }
+  .titles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.more {
+  font-weight: bold;
+  font-size: small;
+  margin: 25px;
+  font-family: 'Raleway-ExtraBold';
+}
+
+.house-info {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.house-info>h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.house-info>p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.housing-span>p {
+  font-size: 0.7em;
+  padding-left: 10px;
+  display: flex;
+  align-self: flex-start;
+  margin: 2px;
+}
+
+.housing-span>h3 {
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  align-self: flex-start;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.housing-marseille {
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.housing-span {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 17px;
+  box-shadow: 2px 2px 2rem rgb(163 163 163 / 90%);
+  padding: 5px;
+}
+
+.star {
+  height: 8px;
+}
+
+.star-span {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.accommodation {
+  margin-bottom: 30px;
+}
+
+.housing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 18px 0;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+
+.esc {
+  height: 15px;
+  margin-right: 10px;
+}
+
+.accommodation>p {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.popular>a>.housing-span {
+  display: flex;
+}
+
+.popular>a>.housing-span>.housing-marseille {
+  width: 60%;
+  height: 99%;
+  max-width: 100%;
+  border-radius: 1rem 0 0 1rem;
+  margin: 0;
+}
+
+.popular>a>.housing-span>h3 {
+  width: 58%;
+}
+
+.housing-info>h3 {
+  font-size: small;
+  width: 95%;
+}
+
+.accommodation>h2 {
+  margin-left: 30px;
+}
+
+@media only screen and (min-width: 2000px) {
+  .housing {
+    height: 1000px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+  .housing {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .housing-link {
+    width: 50%;
+  }
+  .popular {
+    display: flex;
+    justify-content: space-around;
+    height: 95%;
+  }
+  .popular>.housing-link {
+    width: 30%;
+    height: 230px;
+  }
+  .popular>.housing-link>.housing-span {
+    width: 100%;
+    height: 100%;
+  }
+  .popular>.housing-link>.housing-span>.housing-marseille {
+    width: 100%;
+    height: 60%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+  .titles {
+    display: flex;
+    flex-direction: column;
+  }
+  .housing-span {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  .housing-marseille {
+    width: 100%;
+    height: 300px;
+  }
+  .accommodation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+  }
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 90%;
+  }
+  .housing-info>p {
+    width: 95%;
+  }
+}
+
+.price {
+  font-weight: bold;
+}
