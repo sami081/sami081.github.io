@@ -25,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 30px;
   }
   .housing-span {
     height: 175px;
@@ -51,6 +52,7 @@
   }
   .popular>.housing-link {
     height: 142px;
+    width: 90%;
   }
   .popular>.housing-link>.housing-span {
     height: 100%;
@@ -88,7 +90,6 @@
     margin-bottom: 20px;
     font-weight: bold;
   }
-
   .popular {
     display: flex;
     flex-direction: column;
@@ -97,23 +98,18 @@
     align-content: center;
     align-items: center;
   }
-  
   .popular>.housing-link {
     width: 82%;
-    height: 25%;
+    height: 144px;
   }
   .popular>.housing-link>.housing-span {
     flex-wrap: wrap;
   }
   .popular>.housing-link>.housing-span>.housing-info {
-    width: 40%;
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 35%;
+    margin: 0px;
   }
-  .popular>.housing-link>.housing-span>.star-span {
-    margin-left: 15px;
-  }
+  
   .accommodation {
     border-radius: 20px;
     background-color: #f2f2f2;
@@ -134,7 +130,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 40%;
+    height: 35%;
     margin-left: 50px;
   }
   .housing-span {
@@ -142,7 +138,7 @@
     height: 100%;
   }
   .housing-marseille {
-    height: 58%;
+    height: 65%;
     width: 100%;
   }
   .category {
@@ -220,7 +216,7 @@
 }
 
 .star {
-  height: 8px;
+  height: 12px;
 }
 
 .star-span {
@@ -271,11 +267,6 @@
 
 .popular>a>.housing-span>h3 {
   width: 58%;
-}
-
-.housing-info>h3 {
-  font-size: small;
-  width: 95%;
 }
 
 .accommodation>h2 {
@@ -358,4 +349,32 @@
 
 .price {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 2000px) {
+  .card-title {
+    font-size: 1.4em;
+  }
+  .card-text {
+    font-size: 1.1em;
+  }
+  .star {
+    height: 15px;
+  }
+  .popular>.housing-link>.housing-span>.housing-info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 35%;
+    margin: 0px;
+  }
+  .popular>.housing-link>.housing-span {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .star-span{
+    margin: 0px;
+  }
+  .popular>.housing-link {
+    width: 82%;
+    height: 250px;
 }
