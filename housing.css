@@ -100,7 +100,8 @@
   }
   .popular>.housing-link {
     width: 82%;
-    height: 144px;
+    max-height: 26%;
+    min-height: 25%;
   }
   .popular>.housing-link>.housing-span {
     flex-wrap: wrap;
@@ -109,7 +110,6 @@
     width: 35%;
     margin: 0px;
   }
-  
   .accommodation {
     border-radius: 20px;
     background-color: #f2f2f2;
@@ -156,9 +156,14 @@
   }
   .titles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 20px 0 30px;
   }
+}
+
+.title-housing {
+  margin-left: 30px;
 }
 
 .more {
@@ -216,7 +221,7 @@
 }
 
 .star {
-  height: 12px;
+  height: 10px;
 }
 
 .star-span {
@@ -267,10 +272,6 @@
 
 .popular>a>.housing-span>h3 {
   width: 58%;
-}
-
-.accommodation>h2 {
-  margin-left: 30px;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -352,12 +353,6 @@
 }
 
 @media only screen and (min-width: 2000px) {
-  .card-title {
-    font-size: 1.5em;
-  }
-  .card-text {
-    font-size: 1.3em;
-  }
   .star {
     height: 15px;
   }
@@ -371,22 +366,35 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .star-span{
+  .star-span {
     margin: 0px;
   }
-  .popular>.housing-link {
-    width: 82%;
-    height: 250px;
+  
+  .title-housing {
+    font-size: 2em;
+  }
+  .card-title {
+    font-size: 1.1em
+  }
+  .card-text {
+    font-size: 1em;
+  }
+  .more {
+    font-size: 1.3em;
+    margin-left: 50px;
+  }
+  .titles {
+    margin: 0 50px 0 70px;
+  }
+  .title-housing {
+    margin-left: 60px;
+  }
+  .titles>.title-housing {
+    margin-left: 0px;
+  }
+  
 }
-}
-@media only screen and (min-width: 2478px){
-  .card-title{
-    font-size: 1.7em;
-  }
-  .card-text{
-    font-size: 1.4em;
-  }
-  .star{
-    height: 18px;
-  }
+@media only screen and (min-width: 2395px){
+  .card-title{font-size: 1.4em;}
+  .card-text{font-size: 1.3em  ;}
 }

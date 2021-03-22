@@ -48,8 +48,8 @@
     display: flex;
     justify-content: center;
   }
-  .links>a:hover {
-    border-bottom-color: #0065FC;
+  .links>a:focus-visible {
+    border-bottom-color color: #0065FC;
   }
   .activity {
     padding-left: 35px;
@@ -145,6 +145,7 @@
   }
   .links>a:hover {
     border-top-color: #0065FC;
+    color: #0065FC;
   }
   .activity {
     margin-left: 50px;
@@ -357,8 +358,24 @@ header {
 
 footer {
   display: flex;
-  justify-content: space-around;
   background-color: #F2F2F2;
+  height: 150px;
+}
+
+.contenair {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.footer-menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu>h3{
+  margin: 0;
 }
 
 .sub-main-general {
@@ -395,7 +412,7 @@ h2 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 body {
@@ -404,7 +421,7 @@ body {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 0.8em;
   font-family: 'Raleway-ExtraBold';
 }
 
@@ -490,3 +507,71 @@ h3 {
     align-content: space-around;
   }
 }
+
+@media only screen and (min-width: 2000px) {
+  .logo {
+    width: 16%;
+    height: 14%;
+  }
+  #logo1 {
+    width: 50%;
+  }
+  .links>a {
+    font-size: 2em;
+  }
+  .script {
+    font-size: 2em;
+  }
+  .sub-main-general>li>a {
+    font-size: 1em;
+  }
+  .title-search>h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 2em;
+  }
+  .form {
+    height: 50px;
+  }
+  .search-form {
+    height: 100%;
+  }
+  .maps-button {
+    height: 4rem;
+    width: 4rem;
+  }
+  .city {
+    height: 4rem;
+  }
+  .search-button {
+    height: 4rem;
+  }
+  .filters {
+    height: 100px;
+  }
+  .filters>h2 {
+    font-size: 2em;
+  }
+  .filters-form {
+    height: 100%;
+    align-items: center;
+  }
+  .design-button {
+    height: 4rem;
+  }
+  .border {
+    height: 4rem;
+    width: 4rem;
+  }
+  .icon {
+    height: 2rem;
+    width: 2rem;
+  }
+  .criteria {
+    font-size: 1.5em;
+  }
+  .icon-maps {
+    height: 2rem;
+    width: 2rem;
+  }
