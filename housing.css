@@ -171,7 +171,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px 0 30px;
+    margin: 0 20px 0 40px;
   }
   .card-title {
     font-size: 0.7em;
@@ -181,7 +181,7 @@
   }
 }
 
-.title-housing {
+.accommodation>.title-housing {
   margin-left: 30px;
 }
 
@@ -242,8 +242,6 @@
 .star {
   height: 10px;
 }
-
-
 
 .accommodation {
   margin-bottom: 30px;
@@ -374,8 +372,8 @@
   .house-info>h3 {
     font-size: 0.9em;
   }
-  .result>.housing-link>.star-span{
-    margin: 0px; 
+  .result>.housing-link>.star-span {
+    margin: 0px;
     align-self: center !important;
   }
 }
