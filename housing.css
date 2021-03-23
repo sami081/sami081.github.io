@@ -3,6 +3,13 @@
     display: flex;
     flex-direction: column;
   }
+  .card-text {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+  }
+  .card-title {
+    font-size: 1.3em;
+  }
   .amina-hotel {
     order: -1;
   }
@@ -28,7 +35,7 @@
     margin: 0 30px;
   }
   .housing-span {
-    height: 175px;
+    height: 100%;
     margin: 0px;
   }
   .housing-marseille {
@@ -75,12 +82,18 @@
   }
   .result>.housing-link {
     width: 90%;
-    height: 200px;
+    height: 220px;
   }
   .accommodation {
-    height: 1400px;
+    height: 1600px;
     display: flex;
     flex-direction: column;
+  }
+  .house-info {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-around;
   }
 }
 
@@ -160,6 +173,12 @@
     align-items: center;
     margin: 0 20px 0 30px;
   }
+  .card-title {
+    font-size: 0.7em;
+  }
+  .card-text {
+    font-size: 0.6em;
+  }
 }
 
 .title-housing {
@@ -224,11 +243,7 @@
   height: 10px;
 }
 
-.star-span {
-  display: flex;
-  align-self: flex-start;
-  margin-bottom: 5px;
-}
+
 
 .accommodation {
   margin-bottom: 30px;
@@ -251,6 +266,7 @@
 .esc {
   height: 15px;
   margin-right: 10px;
+  align-self: center;
 }
 
 .accommodation>p {
@@ -291,6 +307,7 @@
   }
   .housing-link {
     width: 50%;
+    height: 25%;
   }
   .popular {
     display: flex;
@@ -319,16 +336,16 @@
   }
   .titles {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
   }
   .housing-span {
     width: 80%;
-    height: auto;
+    height: 100%;
     margin: auto;
   }
   .housing-marseille {
     width: 100%;
-    height: 300px;
+    height: 80%;
   }
   .accommodation {
     display: flex;
@@ -343,8 +360,23 @@
     align-content: space-around;
     height: 90%;
   }
+  .house-info {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: center;
+  }
   .housing-info>p {
     width: 95%;
+  }
+  .house-info>h3 {
+    font-size: 0.9em;
+  }
+  .result>.housing-link>.star-span{
+    margin: 0px; 
+    align-self: center !important;
   }
 }
 
@@ -369,7 +401,6 @@
   .star-span {
     margin: 0px;
   }
-  
   .title-housing {
     font-size: 2em;
   }
@@ -392,9 +423,13 @@
   .titles>.title-housing {
     margin-left: 0px;
   }
-  
 }
-@media only screen and (min-width: 2395px){
-  .card-title{font-size: 1.4em;}
-  .card-text{font-size: 1.3em  ;}
+
+@media only screen and (min-width: 2395px) {
+  .card-title {
+    font-size: 1.4em;
+  }
+  .card-text {
+    font-size: 1.3em;
+  }
 }

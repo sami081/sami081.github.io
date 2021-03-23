@@ -1,7 +1,4 @@
 @media only screen and (max-width: 450px) {
-  .activity-tablet {
-    display: none;
-  }
   .activity-section {
     display: flex;
     flex-direction: column;
@@ -29,18 +26,27 @@
     height: 195px;
     width: 90%;
   }
+  .activity-info {
+    height: 20%;
+  }
+  .activity-info>h3 {
+    font-size: 1.3em;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
   .activity-info {
-    height: 10%;
+    height: 14%;
+  }
+  .activity-info>h3{
+    font-size: 1em;
   }
   .activity-marseille-bis>.marseille-activity>.activity-marseille>.activity-info {
-    height: 20%;
+    height: 30%;
   }
   .activity-img {
     width: 100%;
-    height: 90%;
+    height: 86%;
     border-radius: 1em 1em 0 0;
   }
   .activity-marseille {
@@ -60,8 +66,26 @@
     height: 45%;
   }
   .activity-img-bis {
-    height: 80%;
+    height: 70%;
     border-radius: 1em 1em 0 0;
+  }
+  .activity-bis {
+    height: 40% !important;
+  }
+  .activity-ter {
+    height: 52% !important;
+  }
+  .frioul-picture{
+    height: 65%  !important;
+  }
+  .pomegues-picture{
+    height: 75% !important;
+  }
+  .frioul-info{
+    height: 35%  !important;
+  }
+  .pomegues-info{
+    height: 25% !important;
   }
   .activity-marseille-bis>a>.activity-marseille {
     height: 100%;
@@ -127,7 +151,6 @@
 }
 
 .activity-marseille>h3 {
-  display: flex;
   align-self: flex-start;
   padding-left: 10px;
 }
@@ -182,6 +205,9 @@
   .activity-img-bis {
     height: 70%;
     border-radius: 7%;
+  }
+  .activity-info>h3 {
+    font-size: 2em;
   }
 }
 

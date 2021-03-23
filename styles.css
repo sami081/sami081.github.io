@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+.youssef {
+  color: red !important;
+}
+
 /* mobile-version */
 
 @media only screen and (max-width: 450px) {
@@ -47,6 +51,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 1.2em;
   }
   .links>a:focus-visible {
     border-bottom-color color: #0065FC;
@@ -88,6 +93,12 @@
   .information {
     margin: 20px;
   }
+  .housing-numbers {
+    font-size: 1.4em;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   /*end-div-information*/
   /*footer*/
   footer {
@@ -95,6 +106,22 @@
     background-color: #F2F2F2;
     flex-direction: column;
     padding-left: 20px;
+    height: 400px;
+  }
+  .contenair {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .footer-menu {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .footer-menu>h3 {
+    font-size: 1.5em;
+  }
+  .main-general {
+    font-size: 1.4em;
   }
   /*end-footer*/
   /*general*/
@@ -174,6 +201,7 @@
   }
   .information {
     margin: 30px 50px;
+    align-items: center;
   }
   /*end-div-information*/
   /*general*/
@@ -181,6 +209,23 @@
     margin: 0;
   }
   /*end-general*/
+  footer {
+    height: 150px;
+  }
+  .contenair {
+    align-items: center;
+    width: 75%;
+  }
+  .footer-menu>h3 {
+    font-size: 1em;
+  }
+  .footer-menu {
+    height: 100%;
+    margin-top: 30px;
+  }
+  .main-general {
+    font-size: 0.9em;
+  }
 }
 
 /*end-desktop-version*/
@@ -334,7 +379,6 @@ header {
 
 .information {
   display: flex;
-  align-items: center;
 }
 
 .information-border {
@@ -359,22 +403,20 @@ header {
 footer {
   display: flex;
   background-color: #F2F2F2;
-  height: 150px;
 }
 
 .contenair {
   display: flex;
-  width: 75%;
   justify-content: space-around;
+  height: 100%;
 }
 
 .footer-menu {
-  margin-top: auto;
-  margin-bottom: auto;
   display: flex;
   flex-direction: column;
 }
-.footer-menu>h3{
+
+.footer-menu>h3 {
   margin: 0;
 }
 
@@ -480,11 +522,24 @@ h3 {
   .information {
     margin-left: 20px;
     margin-top: 20px;
+    align-items: center;
   }
   .housing-numbers {
     margin-left: 10px;
   }
   /*end-div-information*/
+  footer {
+    height: 200px;
+  }
+  .footer-menu {
+    margin-top: 30px;
+  }
+  .footer-menu>h3{
+    font-size: 1.2em;
+  }
+  .contenair{
+    width: 100%;
+  }
   /*general*/
   h2 {
     display: flex;
