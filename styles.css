@@ -12,6 +12,7 @@
   font-style: normal;
 }
 
+
 /* mobile-version */
 
 @media only screen and (max-width: 450px) {
@@ -51,7 +52,7 @@
   }
   .links>a:hover {
     border-bottom-color: #0065FC;
-    color: #0065FC;
+    color:#0065FC;
   }
   .activity {
     padding-left: 35px;
@@ -498,27 +499,10 @@ h3 {
   }
   .menu {
     width: 100%;
-    height: 40px;
-  }
-  .menu>.submenu {
-    padding-left: 0px;
-    height: 100%;
+    border-bottom: groove lightgray;
   }
   .links {
-    padding: 0px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  .links>a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-bottom: 5px solid lightgray;
-  }
-  .links>a:hover {
-    border-bottom-color: #0065FC;
-    color: #0065FC;
+    padding: 0;
   }
   /*end-header*/
   /*search-banner*/

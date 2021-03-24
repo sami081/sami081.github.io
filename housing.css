@@ -120,7 +120,7 @@
     flex-wrap: wrap;
   }
   .popular>.housing-link>.housing-span>.housing-info {
-    width: 35%;
+    width: 45%;
     margin: 0px;
   }
   .accommodation {
@@ -174,10 +174,10 @@
     margin: 0 20px 0 30px;
   }
   .card-title {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .card-text {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
 
@@ -277,7 +277,7 @@
 }
 
 .popular>a>.housing-span>.housing-marseille {
-  width: 60%;
+  width: 50%;
   height: 99%;
   max-width: 100%;
   border-radius: 1rem 0 0 1rem;
@@ -335,6 +335,7 @@
   .titles {
     display: flex;
     justify-content: space-between;
+    margin: 0 20px;
   }
   .housing-span {
     width: 80%;
@@ -389,7 +390,7 @@
   .popular>.housing-link>.housing-span>.housing-info {
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 35%;
+    width: 45%;
     margin: 0px;
   }
   .popular>.housing-link>.housing-span {
