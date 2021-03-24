@@ -53,8 +53,9 @@
     justify-content: center;
     font-size: 1.2em;
   }
-  .links>a:focus-visible {
-    border-bottom-color color: #0065FC;
+  .links>a:hover {
+    border-bottom-color: #0065FC;
+    color:#0065FC;
   }
   .activity {
     padding-left: 35px;
@@ -174,7 +175,7 @@
     border-top-color: #0065FC;
     color: #0065FC;
   }
-  .links>a:active{
+  .links>a:active {
     color: #0065FC;
   }
   .activity {
@@ -537,10 +538,10 @@ h3 {
   .footer-menu {
     margin-top: 30px;
   }
-  .footer-menu>h3{
+  .footer-menu>h3 {
     font-size: 1.2em;
   }
-  .contenair{
+  .contenair {
     width: 100%;
   }
   /*general*/
