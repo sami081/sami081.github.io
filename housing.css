@@ -121,7 +121,7 @@
   }
   .popular>.housing-link>.housing-span>.housing-info {
     width: 45%;
-    margin: 0px;
+    margin: 10px 0 0 5px;
   }
   .accommodation {
     border-radius: 20px;
@@ -175,9 +175,24 @@
   }
   .card-title {
     font-size: 0.8em;
+    margin: 0px;
   }
   .card-text {
     font-size: 0.7em;
+    margin-top: 3px;
+  }
+  .star-span {
+    margin: 0 0 10px 5px;
+  }
+  .star{}
+}
+
+@media only screen and (min-width: 1188px) {
+  .popular>.housing-link>.housing-span>.housing-info>.card-title {
+    font-size: 0.9em;
+  }
+  .popular>.housing-link>.housing-span>.housing-info>.card-text {
+    font-size: 0.8em;
   }
 }
 
@@ -385,7 +400,7 @@
 
 @media only screen and (min-width: 2000px) {
   .star {
-    height: 15px;
+    height: 20px;
   }
   .popular>.housing-link>.housing-span>.housing-info {
     margin-top: 0px;
@@ -404,10 +419,10 @@
     font-size: 2em;
   }
   .card-title {
-    font-size: 1.1em
+    font-size: 1.6em
   }
   .card-text {
-    font-size: 1em;
+    font-size: 1.4em;
   }
   .more {
     font-size: 1.3em;
@@ -422,13 +437,20 @@
   .titles>.title-housing {
     margin-left: 0px;
   }
-}
-
-@media only screen and (min-width: 2395px) {
-  .card-title {
+  .popular>.housing-link>.housing-span>.housing-info>.card-title {
     font-size: 1.4em;
   }
-  .card-text {
+  .popular>.housing-link>.housing-span>.housing-info>.card-text {
     font-size: 1.3em;
+  }
+}
+
+
+@media only screen and (min-width: 2395px) {
+  .popular>.housing-link>.housing-span>.housing-info>.card-title {
+    font-size: 1.8em;
+  }
+  .popular>.housing-link>.housing-span>.housing-info>.card-text {
+    font-size: 1.7em;
   }
 }
