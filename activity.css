@@ -21,6 +21,7 @@
     justify-content: space-around;
     align-items: center;
     height: 432px;
+    width: 100%;
   }
   .marseille-activity {
     height: 195px;
