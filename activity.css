@@ -190,7 +190,7 @@
   }
   .activity-marseille-bis {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-around;
   }
   .activity-marseille-bis>.marseille-activity {

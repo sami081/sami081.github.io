@@ -184,7 +184,7 @@
   .star-span {
     margin: 0 0 10px 5px;
   }
-  .star{}
+  .star {}
 }
 
 @media only screen and (min-width: 1188px) {
@@ -392,6 +392,26 @@
     margin: 0px;
     align-self: center !important;
   }
+  .popular>.housing-link>.housing-span>.star-span {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .popular>.housing-link>.housing-span>.housing-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .popular>.housing-link>.housing-span>.housing-info>.card-title{
+    margin: 0;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+  }
+  .popular>.housing-link>.housing-span>.housing-info>.card-text{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .price {
@@ -444,7 +464,6 @@
     font-size: 1.3em;
   }
 }
-
 
 @media only screen and (min-width: 2395px) {
   .popular>.housing-link>.housing-span>.housing-info>.card-title {
