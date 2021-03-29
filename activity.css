@@ -6,6 +6,10 @@
     height: 1305px;
     justify-content: space-around;
   }
+  .marseille-activity {
+    height: 195px;
+    width: 90%;
+  }
   .activity-marseille {
     border-radius: 17px;
     box-shadow: 1px 1px 1rem rgb(163 163 163 / 90%);
@@ -15,6 +19,12 @@
     height: 80%;
     border-radius: 1em 1em 0 0;
   }
+  .activity-info {
+    height: 20%;
+  }
+  .activity-info>h3 {
+    font-size: 1.3em;
+  }
   .activity-marseille-bis {
     display: flex;
     flex-direction: column;
@@ -23,74 +33,9 @@
     height: 432px;
     width: 100%;
   }
-  .marseille-activity {
-    height: 195px;
-    width: 90%;
-  }
-  .activity-info {
-    height: 20%;
-  }
-  .activity-info>h3 {
-    font-size: 1.3em;
-  }
 }
 
 @media only screen and (min-width: 1025px) {
-  .activity-info {
-    height: 14%;
-  }
-  .activity-info>h3{
-    font-size: 1em;
-  }
-  .activity-marseille-bis>.marseille-activity>.activity-marseille>.activity-info {
-    height: 30%;
-  }
-  .activity-img {
-    width: 100%;
-    height: 86%;
-    border-radius: 1em 1em 0 0;
-  }
-  .activity-marseille {
-    border-radius: 7%;
-    box-shadow: 1px 1px 1rem rgb(163 163 163 / 90%);
-    height: 100%;
-    width: 100%;
-  }
-  .activity-marseille-bis {
-    justify-content: space-between;
-    height: 90%;
-    width: 23%;
-    flex-direction: column;
-  }
-  .activity-marseille-bis>.marseille-activity {
-    width: 100%;
-    height: 45%;
-  }
-  .activity-img-bis {
-    height: 70%;
-    border-radius: 1em 1em 0 0;
-  }
-  .activity-bis {
-    height: 40% !important;
-  }
-  .activity-ter {
-    height: 52% !important;
-  }
-  .frioul-picture{
-    height: 65%  !important;
-  }
-  .pomegues-picture{
-    height: 75% !important;
-  }
-  .frioul-info{
-    height: 35%  !important;
-  }
-  .pomegues-info{
-    height: 25% !important;
-  }
-  .activity-marseille-bis>a>.activity-marseille {
-    height: 100%;
-  }
   .activity-section {
     height: 510px;
     display: flex;
@@ -100,6 +45,61 @@
   .marseille-activity {
     height: 90%;
     width: 23%;
+  }
+  .activity-marseille {
+    border-radius: 7%;
+    box-shadow: 1px 1px 1rem rgb(163 163 163 / 90%);
+    height: 100%;
+    width: 100%;
+  }
+  .activity-img {
+    width: 100%;
+    height: 86%;
+    border-radius: 1em 1em 0 0;
+  }
+  .activity-info {
+    height: 14%;
+  }
+  .activity-info>h3 {
+    font-size: 1em;
+  }
+  .activity-marseille-bis {
+    justify-content: space-between;
+    height: 90%;
+    width: 23%;
+    flex-direction: column;
+  }
+  .activity-ter {
+    height: 52% !important;
+  }
+  .activity-bis {
+    height: 40% !important;
+  }
+  .activity-marseille-bis>.marseille-activity {
+    width: 100%;
+    height: 45%;
+  }
+  .activity-marseille-bis>a>.activity-marseille {
+    height: 100%;
+  }
+  .activity-img-bis {
+    height: 70%;
+    border-radius: 1em 1em 0 0;
+  }
+  .frioul-picture {
+    height: 65% !important;
+  }
+  .pomegues-picture {
+    height: 75% !important;
+  }
+  .frioul-info {
+    height: 35% !important;
+  }
+  .pomegues-info {
+    height: 25% !important;
+  }
+  .activity-marseille-bis>.marseille-activity>.activity-marseille>.activity-info {
+    height: 30%;
   }
 }
 
@@ -111,7 +111,7 @@
     font-size: 1.8em;
   }
 }
-
+/*all version*/
 #activities {
   margin: 60px 50px 25px 50px;
 }
@@ -155,13 +155,17 @@
   align-self: flex-start;
   padding-left: 10px;
 }
-
+.activity-info>h3 {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
 .activity-info {
   display: flex;
   align-self: flex-start;
   padding-left: 15px;
 }
-
+/*end all version*/
 @media only screen and (min-width: 451px) and (max-width: 1024px) {
   .activity-section {
     display: flex;
@@ -212,8 +216,3 @@
   }
 }
 
-.activity-info>h3 {
-  display: flex;
-  align-items: center;
-  margin: 0px;
-}

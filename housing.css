@@ -1,14 +1,30 @@
+/*mobile version*/
+
 @media only screen and (max-width: 450px) {
   .housing {
     display: flex;
     flex-direction: column;
   }
-  .card-text {
-    font-size: 1.2em;
-    margin: 0 0 10px 0;
+  /*accommodation*/
+  .accommodation {
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
   }
-  .card-title {
-    font-size: 1.3em;
+  .result {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .result>.housing-link {
+    width: 90%;
+    height: 220px;
+  }
+  .cannebiere-hostel {
+    order: -6;
   }
   .amina-hotel {
     order: -1;
@@ -25,15 +41,6 @@
   .sea-hotel {
     order: -3;
   }
-  .cannebiere-hostel {
-    order: -6;
-  }
-  .titles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 30px;
-  }
   .housing-span {
     height: 100%;
     margin: 0px;
@@ -42,9 +49,33 @@
     width: 100%;
     height: 70%;
   }
+  .house-info {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-around;
+  }
+  .card-title {
+    font-size: 1.3em;
+  }
+  .card-text {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+  }
+  /*end accommodation*/
+  /*category*/
   .category {
     order: -1;
     height: 585px;
+  }
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+  }
+  .titles>h2 {
+    margin-left: 0px;
   }
   .popular {
     width: 100%;
@@ -53,9 +84,6 @@
     justify-content: space-around;
     align-items: center;
     height: 95%;
-  }
-  .titles>h2 {
-    margin-left: 0px;
   }
   .popular>.housing-link {
     height: 142px;
@@ -72,36 +100,85 @@
   .popular>.housing-link>.housing-span>.housing-info {
     width: 40%;
   }
-  .result {
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  .result>.housing-link {
-    width: 90%;
-    height: 220px;
-  }
-  .accommodation {
-    height: 1600px;
-    display: flex;
-    flex-direction: column;
-  }
-  .house-info {
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-    justify-content: space-around;
-  }
+  /*end category*/
 }
 
+/*end mobile version*/
+
+/*desktop version*/
+
 @media only screen and (min-width: 1025px) {
+  .housing {
+    height: 625px;
+    margin: 0 50px;
+  }
+  /*accommodation*/
+  .accommodation {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   #accommodations {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
+  }
+  .accommodation>.title-housing {
+    margin-left: 4.3%;
+  }
+  .result {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+  }
+  .housing-link {
+    width: 27%;
+    height: 41%;
+  }
+  .housing-span {
+    width: 100%;
+    height: 100%;
+  }
+  .housing-marseille {
+    height: 65%;
+    width: 100%;
+  }
+  .house-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35%;
+    margin-left: 50px;
+  }
+  .card-title {
+    font-size: 0.8em;
+    margin: 0px;
+  }
+  .card-text {
+    font-size: 0.7em;
+    margin-top: 3px;
+  }
+  .star-span {
+    margin: 0 0 10px 5px;
+  }
+  /*end accommodation*/
+  /*category*/
+  .category {
+    border-radius: 20px;
+    width: 30%;
+  }
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 30px;
   }
   .popular {
     display: flex;
@@ -123,69 +200,11 @@
     width: 45%;
     margin: 10px 0 0 5px;
   }
-  .accommodation {
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    width: 62%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .housing-link {
-    width: 27%;
-    height: 41%;
-  }
-  .housing {
-    height: 625px;
-    margin: 0 50px;
-  }
-  .house-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 35%;
-    margin-left: 50px;
-  }
-  .housing-span {
-    width: 100%;
-    height: 100%;
-  }
-  .housing-marseille {
-    height: 65%;
-    width: 100%;
-  }
-  .category {
-    border-radius: 20px;
-    width: 30%;
-  }
-  .result {
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-direction: column;
-  }
-  .titles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px 0 30px;
-  }
-  .card-title {
-    font-size: 0.8em;
-    margin: 0px;
-  }
-  .card-text {
-    font-size: 0.7em;
-    margin-top: 3px;
-  }
-  .star-span {
-    margin: 0 0 10px 5px;
-  }
-  .star {}
 }
+
+/*end desktop version*/
+
+/*1188px screen*/
 
 @media only screen and (min-width: 1188px) {
   .popular>.housing-link>.housing-span>.housing-info>.card-title {
@@ -196,52 +215,19 @@
   }
 }
 
-.accommodation>.title-housing {
-  margin-left: 30px;
-}
+/*end 1188px screen*/
 
-.more {
-  font-weight: bold;
-  font-size: small;
-  margin: 25px;
-  font-family: 'Raleway-ExtraBold';
-}
+/*all version*/
 
-.house-info {
-  margin-right: auto;
-  margin-left: 15px;
-}
-
-.house-info>h3 {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.house-info>p {
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.housing-span>p {
-  font-size: 0.7em;
-  padding-left: 10px;
+.housing {
   display: flex;
-  align-self: flex-start;
-  margin: 2px;
+  justify-content: space-between;
 }
 
-.housing-span>h3 {
-  font-weight: bold;
-  font-size: small;
-  display: flex;
-  align-self: flex-start;
-  margin: 0;
-  margin-left: 10px;
-}
+/*accommodation*/
 
-.housing-marseille {
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
+.accommodation {
+  margin-bottom: 30px;
 }
 
 .housing-span {
@@ -254,18 +240,40 @@
   padding: 5px;
 }
 
+.housing-marseille {
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.house-info {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.card-title {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.card-text {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .star {
   height: 10px;
 }
 
-.accommodation {
-  margin-bottom: 30px;
+.more {
+  font-weight: bold;
+  font-size: small;
+  margin: 25px;
+  font-family: 'Raleway-ExtraBold';
 }
 
-.housing {
-  display: flex;
-  justify-content: space-between;
-}
+/*end accommodation*/
+
+/*category*/
 
 .category {
   display: flex;
@@ -282,11 +290,6 @@
   align-self: center;
 }
 
-.accommodation>p {
-  font-weight: bold;
-  margin-left: 30px;
-}
-
 .popular>a>.housing-span {
   display: flex;
 }
@@ -299,28 +302,78 @@
   margin: 0;
 }
 
-.popular>a>.housing-span>h3 {
-  width: 58%;
+/*end category*/
+
+.price {
+  font-weight: bold;
 }
 
-@media only screen and (min-width: 2000px) {
-  .housing {
-    height: 1150px;
-  }
-}
+/*end all version*/
+
+/*tablet version*/
 
 @media only screen and (min-width: 451px) and (max-width: 1024px) {
   .housing {
     display: flex;
     flex-direction: column;
   }
+  /*accommodation*/
+  .accommodation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+  }
   h2 {
     display: flex;
     justify-content: center;
   }
+  /*end accommodation*/
+  /*result*/
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 90%;
+  }
   .housing-link {
     width: 50%;
     height: 25%;
+  }
+  .housing-span {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .housing-marseille {
+    width: 100%;
+    height: 80%;
+  }
+  .house-info {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: center;
+  }
+  .card-title {
+    font-size: 0.9em;
+  }
+  /*end result*/
+  /*category*/
+  .category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
   }
   .popular {
     display: flex;
@@ -340,101 +393,38 @@
     height: 60%;
     border-radius: 1rem 1rem 0 0;
   }
-  .category {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 400px;
-    padding: 0;
-  }
-  .titles {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px;
-  }
-  .housing-span {
-    width: 80%;
-    height: 100%;
-    margin: auto;
-  }
-  .housing-marseille {
-    width: 100%;
-    height: 80%;
-  }
-  .accommodation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1500px;
-  }
-  .result {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    height: 90%;
-  }
-  .house-info {
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 20%;
-    justify-content: center;
-  }
-  .housing-info>p {
-    width: 95%;
-  }
-  .house-info>h3 {
-    font-size: 0.9em;
-  }
-  .result>.housing-link>.star-span {
-    margin: 0px;
-    align-self: center !important;
-  }
-  .popular>.housing-link>.housing-span>.star-span {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .popular>.housing-link>.housing-span>.housing-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .popular>.housing-link>.housing-span>.housing-info>.card-title{
+  .popular>.housing-link>.housing-span>.housing-info>.card-title {
     margin: 0;
     font-size: 0.8em;
     display: flex;
     justify-content: center;
   }
-  .popular>.housing-link>.housing-span>.housing-info>.card-text{
+  .popular>.housing-link>.housing-span>.housing-info>.card-text {
     margin-top: 5px;
     display: flex;
     justify-content: center;
   }
+  .popular>.housing-link>.housing-span>.star-span {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*end category*/
 }
 
-.price {
-  font-weight: bold;
-}
+/*end tablet version*/
+
+/*2000px*/
 
 @media only screen and (min-width: 2000px) {
-  .star {
-    height: 20px;
+  .housing {
+    height: 1150px;
   }
-  .popular>.housing-link>.housing-span>.housing-info {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 45%;
-    margin: 0px;
-  }
-  .popular>.housing-link>.housing-span {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .star-span {
-    margin: 0px;
-  }
+  /*accommodation*/
   .title-housing {
     font-size: 2em;
   }
@@ -444,26 +434,47 @@
   .card-text {
     font-size: 1.4em;
   }
+  .star-span {
+    margin: 0px;
+  }
+  .star {
+    height: 20px;
+  }
   .more {
     font-size: 1.3em;
     margin-left: 50px;
   }
+  /*end accommodation*/
+  /*category*/
   .titles {
     margin: 0 50px 0 70px;
-  }
-  .title-housing {
-    margin-left: 60px;
   }
   .titles>.title-housing {
     margin-left: 0px;
   }
+  .popular>.housing-link>.housing-span {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .popular>.housing-link>.housing-span>.housing-info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 45%;
+    margin: 0px;
+  }
+  
   .popular>.housing-link>.housing-span>.housing-info>.card-title {
     font-size: 1.4em;
   }
   .popular>.housing-link>.housing-span>.housing-info>.card-text {
     font-size: 1.3em;
   }
+  /*end category*/
 }
+
+/*end 2000px*/
+
+/*2395px*/
 
 @media only screen and (min-width: 2395px) {
   .popular>.housing-link>.housing-span>.housing-info>.card-title {
@@ -473,3 +484,5 @@
     font-size: 1.7em;
   }
 }
+
+/*end 2095px*/

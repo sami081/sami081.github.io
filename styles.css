@@ -229,10 +229,6 @@
 
 /*all-version*/
 
-body {
-  min-width: 320px;
-}
-
 /*header*/
 
 header {
@@ -455,21 +451,18 @@ h2 {
   font-family: 'Raleway-ExtraBold';
 }
 
-p {
-  font-size: 0.8em;
-}
+
 
 body {
   font-family: 'Raleway', 'Arial Narrow Bold', sans-serif;
   font-style: normal;
+  min-width: 320px;
 }
 
 h3 {
   font-size: 0.8em;
   font-family: 'Raleway-ExtraBold';
 }
-
-#placeholder {}
 
 /*end-general*/
 
@@ -576,6 +569,8 @@ h3 {
   }
 }
 
+/* big screen*/
+
 @media only screen and (min-width: 2000px) {
   .logo {
     width: 16%;
@@ -643,3 +638,5 @@ h3 {
     height: 2rem;
     width: 2rem;
   }
+}
+/*end big screen*/
