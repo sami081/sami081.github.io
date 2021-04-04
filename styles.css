@@ -33,7 +33,6 @@
   }
   .menu {
     width: 100%;
-    border-radius: ;
   }
   .submenu {
     padding-left: 0;
@@ -451,8 +450,6 @@ h2 {
   font-family: 'Raleway-ExtraBold';
 }
 
-
-
 body {
   font-family: 'Raleway', 'Arial Narrow Bold', sans-serif;
   font-style: normal;
@@ -639,4 +636,5 @@ h3 {
     width: 2rem;
   }
 }
+
 /*end big screen*/
