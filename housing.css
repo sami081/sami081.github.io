@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: column;
   }
+.title-housing{
+  margin-left: 25px;
+}
   .result {
     height: 95%;
     display: flex;
