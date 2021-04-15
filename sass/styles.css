@@ -1,3 +1,20 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../ressources/font_family/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../ressources/font_family/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-thin";
+  src: url(../ressources/font_family/Roboto/Roboto-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../ressources/font_family/Roboto/Roboto-Regular.ttf);
+}
 body {
   margin: 0;
   padding: 0;
@@ -47,7 +64,7 @@ body {
 .city {
   border: none;
   background-color: transparent;
-  width: 4rem;
+  width: 6rem;
 }
 
 .maps-button {
@@ -66,6 +83,8 @@ body {
   flex-direction: column;
   background-color: #f5f5f5;
   align-items: center;
+  height: 300px;
+  justify-content: center;
 }
 .restaurant-reservation .title-reservation {
   font-size: 1.5em;
@@ -83,19 +102,19 @@ body {
   width: 15em;
   background-image: linear-gradient(#FF79DA, #9256dc);
   border: none;
-  margin-bottom: 50px;
   color: white;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .exploration:hover {
   background-image: linear-gradient(#ff8de0, #9d67e0);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
 
-.choice-list > h2 {
-  margin-left: 20px;
-}
 .choice-list .all-card {
   display: flex;
   align-items: center;
@@ -104,9 +123,11 @@ body {
 }
 .choice-list .all-card .card-choice {
   background-color: #f5f5f5;
+  border: transparent;
   border-radius: 5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .pastille {
@@ -133,6 +154,7 @@ body {
 }
 .informations > .text-information {
   width: 80%;
+  font: 1em;
 }
 
 .link {
@@ -251,6 +273,11 @@ footer .logo {
   align-items: center;
   padding: 0 20px;
 }
+.title > h2 {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 500;
+}
 
 .menu-restaurant {
   background-color: #f5f5f5;
@@ -281,18 +308,43 @@ footer .logo {
   align-items: center;
   justify-content: space-between;
 }
-
-.title-menu {
-  margin-left: 20px;
+.information-menu > .text {
+  font-family: "Roboto-thin";
 }
 
 .text {
   margin: 0;
+  font-family: "Roboto";
+}
+
+.title-menu {
+  margin-left: 20px;
+  font-family: "Roboto-thin";
+}
+
+.logo1 {
+  color: #FFF;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 0.2em;
+}
+
+.logo1::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.logo1:hover::before {
+  color: red;
+  cursor: pointer;
 }
 
 .button {
   display: flex;
   justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 
 @media only screen and (max-width: 450px) {
@@ -306,6 +358,9 @@ footer .logo {
 
   .choice-list {
     height: 300px;
+  }
+  .choice-list > h2 {
+    margin-left: 25px;
   }
 
   .all-card {
@@ -337,7 +392,7 @@ footer .logo {
   }
 
   .menu-restaurant {
-    height: 1200px;
+    height: 1300px;
   }
 
   .restaurant > h2 {
@@ -346,13 +401,18 @@ footer .logo {
 }
 @media only screen and (min-width: 451px) and (max-width: 1023px) {
   .choice-list {
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+  }
+  .choice-list > h2 {
+    width: 100%;
+    text-align: center;
   }
 
   .card-choice {
-    width: 27%;
+    width: 35%;
   }
 
   footer {

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(ressources/Font-Family/Roboto/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Shrikhand";
+  src: url(ressources//font_family/Shrikhland/Shrikhand-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'Roboto-Regular', sans-serif;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+}
+/*header commun*/
+.first{
+  width: 100%;
+  justify-content: center;
+}
+.logo-header{
+  display: flex;
+  align-items: center;
+  margin:  15px 0;
+
+.restaurant-logo{
+  width: 50%;
+}
+/*header commun-end*/
+/*section research commun*/
+.localisation{
+  background-color: #ebebeb;
+  .localisation-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+  }
+}
+.restaurant-reservation{
+  display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    align-items: center;
+    .title-reservation{
+      
+    font-size: 1.5em;
+    text-align: center;
+    width: 70%;
+    }
+    .text-reservation{
+      text-align: center;
+      width: 80%;
+    }
+}
+/*end section research*/
+/.restaurant{
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+
+}
+.all-card{
+  display: flex;
+  width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+footer{
+  background-color: black;
+  >h2{
+    color:white;
+    margin-left:25px;
+  }
+   .logo{
+    padding-right: 10px;
+  }
+  }
+  menu{
+    display: flex;
+    flex-direction: column;
+  }
