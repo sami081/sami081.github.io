@@ -404,6 +404,11 @@ footer{
     >.text{
       font-family: 'Roboto-thin';
       font-size: 0.95em;
+      width: 80%;
+    }
+    >.test{
+      width: 20%;
+      font-weight: bolder;
     }
   }
   .text{
