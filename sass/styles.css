@@ -1,4 +1,95 @@
-@charset "UTF-8";
+.logo1 {
+  background-image: url(../ressources/logo/heart.svg);
+}
+.logo1:hover {
+  background-image: url(../ressources/logo/heart-solid.svg);
+  transition: 1.5s;
+}
+
+.line {
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  margin: 5px 0 25px 22px;
+}
+
+@keyframes onandoff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+}
+@keyframes bloc {
+  0% {
+    margin-left: -200px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+  100% {
+    margin-left: 500px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transition: 200ms;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transition: 200ms;
+  }
+}
+.line {
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  margin: 5px 0 25px 22px;
+}
+
+.card-menu {
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -webkit-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+}
+
+.load-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+  background-image: linear-gradient(#FF79DA 10%, #9356DC 95%);
+  width: 100%;
+  height: 100%;
+  animation: onandoff 3s linear forwards;
+  pointer-events: none;
+}
+.load-body .title-load {
+  font-family: Shrikhand, "cursive";
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+.load-body .load {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border: 4px solid #181818;
+  animation: bloc 3s;
+  -moz-animation: bloc 3s;
+  -webkit-animation: bloc 3s;
+  -o-animation: bloc 3s;
+}
+
 @font-face {
   font-family: "Roboto-bold";
   src: url(../ressources/font_family/Roboto/Roboto-Bold.ttf) format("truetype");
@@ -64,7 +155,7 @@ body {
 .city {
   border: none;
   background-color: transparent;
-  width: 6rem;
+  width: 8rem;
 }
 
 .maps-button {
@@ -258,11 +349,12 @@ a {
 }
 
 footer {
-  background-color: black;
+  background-color: #353535;
 }
 footer > h2 {
   color: white;
   margin-left: 25px;
+  font-family: "Shrikhand";
 }
 footer .logo {
   padding-right: 10px;
@@ -294,13 +386,14 @@ footer .logo {
 
 .name-menu {
   display: flex;
-  flex-direction: column;
-  padding: 0 10px;
+  cursor: pointer;
   box-shadow: 5px 8px 12px -2px #d1d1d1;
   border-radius: 1em;
   background-color: white;
   height: 60px;
   justify-content: space-around;
+  padding: 0px;
+  border: none;
 }
 
 .information-menu {
@@ -310,34 +403,18 @@ footer .logo {
 }
 .information-menu > .text {
   font-family: "Roboto-thin";
+  font-size: 0.95em;
 }
 
 .text {
   margin: 0;
   font-family: "Roboto";
+  display: flex;
 }
 
 .title-menu {
   margin-left: 20px;
   font-family: "Roboto-thin";
-}
-
-.logo1 {
-  color: #FFF;
-  background-color: #000;
-  border-radius: 50%;
-  padding: 0.2em;
-}
-
-.logo1::before {
-  content: "";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-
-.logo1:hover::before {
-  color: red;
-  cursor: pointer;
 }
 
 .button {
@@ -348,12 +425,72 @@ footer .logo {
 }
 
 @media only screen and (max-width: 450px) {
+  .text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 2px;
+  }
+
   body {
     min-width: 320px;
   }
 
   .picture {
     width: 100%;
+  }
+
+  .test3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 900ms ease-in-out;
+  }
+
+  .name-menu:hover {
+    border: none;
+    outline: none;
+  }
+  .name-menu:hover .sami-test2 {
+    transform: rotate(1turn);
+  }
+  .name-menu:hover .test-sami {
+    border-radius: 0 0.8rem 0.8rem 0;
+    width: 30%;
+  }
+  .name-menu:hover .test3 {
+    width: 70%;
+  }
+
+  .test-sami {
+    width: 0%;
+    font-size: 100rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 1100ms ease-in-out;
+    background-color: #99E2D0;
+  }
+
+  .sami-test {
+    width: 50%;
+    height: 50%;
+  }
+
+  .sami-test2 {
+    border-radius: 100%;
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1300ms ease-in-out;
   }
 
   .choice-list {
@@ -392,7 +529,7 @@ footer .logo {
   }
 
   .menu-restaurant {
-    height: 1300px;
+    height: 1350px;
   }
 
   .restaurant > h2 {
@@ -422,6 +559,78 @@ footer .logo {
   }
 }
 @media only screen and (min-width: 451px) {
+  .exemple {
+    display: flex;
+    flex-direction: column;
+  }
+  .exemple .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .exemple .bottom-border {
+    background-color: red;
+    height: 0px;
+    display: none;
+    -webkit-transition: height 1.5s ease-out, background 2s ease;
+  }
+
+  .exemple:hover .bottom-border {
+    height: 10px;
+    -webkit-transition: height 1.5s ease-out, background 2s ease;
+    display: flex;
+  }
+
+  .test3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    transition: all 2000ms ease-in-out;
+  }
+
+  .sami-test {
+    height: 50%;
+    width: 50%;
+  }
+
+  .sami-test2 {
+    border-radius: 100%;
+    height: 0%;
+    width: 0%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2000ms ease-in-out;
+  }
+
+  .name-menu:hover {
+    border: none;
+    outline: none;
+  }
+  .name-menu:hover .sami-test2 {
+    width: 20%;
+    height: 80%;
+  }
+  .name-menu:hover .test-sami {
+    background-color: #99E2D0;
+    /*
+    -webkit-transition: height 2s ease-in-out, background 13s  ease-in-out;*/
+    border-radius: 0 0 0.8rem 0.8rem;
+    height: 25%;
+  }
+
+  .test-sami {
+    width: 100%;
+    font-size: 100rem;
+    height: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 2000ms ease-in-out;
+  }
+
   .banner {
     display: flex;
     justify-content: center;
@@ -452,10 +661,10 @@ footer .logo {
     justify-content: center;
   }
   .title > h2 {
-    margin: 15px 10px 0 0;
+    margin: 25px 10px 0 0;
   }
   .title > .logo {
-    margin: 15px 10px 0 0;
+    margin: 25px 10px 0 0;
   }
 
   .starter {
@@ -466,7 +675,8 @@ footer .logo {
 
   .name-menu {
     width: 25%;
-    height: 110px;
+    height: 150px;
+    flex-direction: column;
   }
 
   .main-courses {
@@ -486,11 +696,13 @@ footer .logo {
   }
 
   .text {
-    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px;
   }
 
   .menu-restaurant {
-    height: 800px;
+    height: 950px;
   }
 
   .name-menu-bis {
