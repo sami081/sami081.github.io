@@ -1,0 +1,25 @@
+.first {
+  width: 100%;
+  justify-content: center;
+}
+.second {
+  width: 80%;
+  justify-content: space-around;
+  >.title-header{
+        margin: 10px 0 5px 0 !important;
+    font-size: 1.5em;
+}
+  }
+
+.logo-header {
+  display: flex;
+  align-items: center;
+
+  .restaurant-logo {
+    width: 50%;
+  }
+  .title-header {
+    font-family: "Shrikhand";
+    margin: 15px 0 10px 0;
+  }
+}

@@ -1,0 +1,39 @@
+@keyframes onandoff{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+}
+@keyframes bloc{
+  0%{
+    
+    margin-left: -200px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+  
+  
+  100%{
+    margin-left: 500px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  
+  }
+}
+@keyframes fadein{
+  0% {
+    opacity: 0;
+    transition: 400ms;
+    transform: translateY(100px);
+}
+100% {
+    opacity: 1;
+    transition: 400ms;
+}
+}

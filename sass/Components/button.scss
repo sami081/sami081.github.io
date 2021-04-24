@@ -1,0 +1,56 @@
+.maps-button{
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  .icon-maps{
+    height: 0.7rem;
+    
+    background-color: transparent;
+  }
+}
+.name-menu{
+  display: flex;
+  
+  cursor: pointer;
+  box-shadow: 5px 8px 12px -2px #d1d1d1;
+  border-radius: 1em;
+  background-color: white;
+  height: 60px;
+  justify-content: space-around;
+  padding: 0px;
+  border: none;
+}
+.exploration{
+  border-radius: 5rem;
+  height: 3rem;
+  width: 15em;
+  background-image: linear-gradient(#FF79DA, #9256dc);
+  border: none;
+  color: white;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+    &:hover{
+    background-image: linear-gradient(#ff8de0, #9d67e0);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 75%);
+    }
+}
+@media only screen and (max-width: 450px){
+  .name-menu{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 451px){
+  .name-menu{
+    width: 25%;
+    height:150px;
+    flex-direction: column;
+  }
+  .name-menu-bis{
+    width: 20%;
+  }
+}

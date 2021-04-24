@@ -1,0 +1,64 @@
+@media only screen and (max-width: 450px) {
+  .dessert {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  .starter {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  .main-courses {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  .choice-list {
+    height: 300px;
+    padding-left: 5px;
+    > h2 {
+      margin-left: 25px;
+      font-family: "Roboto-bold";
+      font-weight: bolder;
+    }
+  }
+  .menu-restaurant {
+    height: 1150px;
+  }
+}
+.restaurant {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.menu-restaurant {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  border-radius: 3em 3em 0 0;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 451px) {
+  .starter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dessert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
