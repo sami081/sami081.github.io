@@ -52,9 +52,10 @@ footer a {
 .second {
   width: 80%;
   justify-content: space-around;
+  height: 50px;
 }
 .second > .title-header {
-  margin: 10px 0 5px 0 !important;
+  margin: 0 !important;
   font-size: 1.5em;
 }
 
@@ -232,7 +233,7 @@ body {
   .starter {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 350px;
   }
 
   .main-courses {
@@ -330,7 +331,6 @@ body {
 .logo {
   height: 1rem;
   width: 1rem;
-  margin: 10px 0 5px 0;
 }
 
 .localisation {
@@ -655,7 +655,7 @@ body {
 }
 @media only screen and (min-width: 451px) and (max-width: 1023px) {
   .choice-list {
-    height: 250px;
+    height: 300px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -704,7 +704,7 @@ body {
     outline: none;
   }
   .name-menu:focus .sami-test2 {
-    width: 20%;
+    width: 10%;
     height: 80%;
   }
   .name-menu:focus .test-sami {
