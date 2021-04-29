@@ -4,7 +4,7 @@ footer {
   padding-right: 10px;
   > h2 {
     color: white;
-    margin: 10px 0 0 25px;
+    margin: 20px 0 0 25px;
     font-family: "Shrikhand";
     font-size: 1.1em;
     font-weight: 100;
@@ -22,10 +22,7 @@ footer {
     color: white;
   }
 }
-.menu {
-  display: flex;
-  flex-direction: column;
-}
+
 @media only screen and (min-width: 451px) {
   footer {
     display: flex;

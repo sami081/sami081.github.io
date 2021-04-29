@@ -5,7 +5,7 @@ footer {
 }
 footer > h2 {
   color: white;
-  margin: 10px 0 0 25px;
+  margin: 20px 0 0 25px;
   font-family: "Shrikhand";
   font-size: 1.1em;
   font-weight: 100;
@@ -21,11 +21,6 @@ footer ul {
 footer a {
   text-decoration: none;
   color: white;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
 }
 
 @media only screen and (min-width: 451px) {
@@ -71,6 +66,14 @@ footer a {
   margin: 15px 0 10px 0;
 }
 
+@media only screen and (min-width: 451px) {
+  .second {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+  }
+}
 .load-body {
   display: flex;
   align-items: center;
@@ -271,11 +274,11 @@ body {
   border-radius: 3em 3em 0 0;
 }
 
+/*
 .menu {
   display: flex;
   flex-direction: column;
-}
-
+}*/
 @media only screen and (min-width: 451px) {
   .starter {
     display: flex;
@@ -317,6 +320,12 @@ body {
   -moz-animation: fadein 2.5s;
   -webkit-animation: fadein 2.5s;
   -o-animation: fadein 2.5s;
+}
+
+.test {
+  display: flex;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 
 .logo-title {
@@ -457,7 +466,8 @@ body {
   justify-content: center;
   width: 80px;
   height: 30px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 .all-card {
@@ -524,19 +534,16 @@ body {
 }
 .information-menu > .text {
   font-family: "Roboto-thin";
-  font-size: 0.95em;
-  width: 80%;
+  font-size: 0.8em;
+  width: 100%;
   font-weight: 600;
-}
-.information-menu > .test {
-  width: 20%;
-  font-weight: bolder;
 }
 
 .text {
   margin: 0;
   font-family: "Roboto";
   display: flex;
+  font-size: 0.9em;
 }
 
 .title-menu {
@@ -552,13 +559,18 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+  .test {
+    align-items: flex-end;
+    padding-right: 20px;
+    width: 10%;
+  }
+
   .text {
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
     display: block;
     overflow: hidden;
-    margin-bottom: 2px;
   }
 
   .line {
@@ -590,7 +602,7 @@ body {
     width: 20%;
   }
   .name-menu:hover .test3 {
-    width: 80%;
+    width: 60%;
   }
 
   .test-sami {
@@ -639,6 +651,7 @@ body {
 
   .title {
     justify-content: space-around;
+    margin-top: 20px;
   }
 
   .card-menu {
@@ -670,6 +683,10 @@ body {
   }
 }
 @media only screen and (min-width: 451px) {
+  .test {
+    justify-content: center;
+  }
+
   .line {
     margin-bottom: 20px;
   }
@@ -699,15 +716,15 @@ body {
     transition: all 2000ms ease-in-out;
   }
 
-  .name-menu:focus {
+  .name-menu:hover {
     border: none;
     outline: none;
   }
-  .name-menu:focus .sami-test2 {
+  .name-menu:hover .sami-test2 {
     width: 10%;
     height: 80%;
   }
-  .name-menu:focus .test-sami {
+  .name-menu:hover .test-sami {
     background-color: #99e2d0;
     border-radius: 0 0 0.8rem 0.8rem;
     height: 25%;
@@ -732,7 +749,7 @@ body {
   }
   .banner .picture {
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
 
   .restaurant {
@@ -753,20 +770,18 @@ body {
     justify-content: space-around;
     align-self: center;
     width: 30%;
-    max-width: 300px;
+    max-width: 350px;
+    min-width: 300px;
   }
   .title > .logo {
     margin: 25px 10px 0 0;
-  }
-
-  .information-menu {
-    flex-direction: column;
   }
 
   .text {
     justify-content: center;
     margin-bottom: 5px;
     padding: 5px;
+    text-align: center;
   }
 
   .menu-restaurant {
