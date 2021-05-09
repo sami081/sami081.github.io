@@ -1,45 +1,47 @@
-.load-body{
+//loading//
+.load-body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: fixed;
   z-index: 5;
-  background-image: linear-gradient(#FF79DA 40%, #9356DC 60%);
+  background-image: linear-gradient(#ff79da 40%, #9356dc 60%);
   width: 100%;
   height: 100%;
   animation: onandoff 3s linear forwards;
   pointer-events: none;
-  .title-load{   
-     font-family: Shrikhand, "cursive";
+  .title-load {
+    font-family: Shrikhand, "cursive";
     font-size: xx-large;
     padding-bottom: 10px;
+  }
+  .load {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    vertical-align: middle;
+
+    border: 4px solid #181818;
+
+    animation: bloc 3s;
+    -moz-animation: bloc 3s;
+    -webkit-animation: bloc 3s;
+    -o-animation: bloc 3s;
+  }
 }
-.load{    display: inline-block;
-  width: 30px;
-  height: 30px;
-  
-  vertical-align: middle;
-  
-  border: 4px solid #181818;
- 
- 
-  animation: bloc 3s;
-  -moz-animation: bloc 3s;
-  -webkit-animation: bloc 3s;
-  -o-animation: bloc 3s;
- 
-}
-}
-a{
+//end loading//
+a {
   text-decoration: none;
 }
+//font-family//
 @font-face {
-  font-family:"Shrikhand";
+  font-family: "Shrikhand";
   src: url(../ressources/font_family/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family:"Roboto-thin" ;
+  font-family: "Roboto-thin";
   src: url(../ressources/font_family/Roboto/Roboto-Thin.ttf) format("truetype");
 }
 @font-face {
@@ -47,14 +49,113 @@ a{
   src: url(../ressources/font_family/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
-  font-family:"Roboto-bold" ;
+  font-family: "Roboto-bold";
   src: url(../ressources/font_family/Roboto/Roboto-Bold.ttf) format("truetype");
 }
-body{
-  margin:0;
-  padding:0;
+//end font family//
+body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-    min-width: 320px;
-    font-family: "Roboto";
+  min-width: 320px;
+  font-family: "Roboto";
+}
+.line {
+  border-bottom: 4px solid #99e2d0;
+  width: 40px;
+}
+.logo-title {
+  font-family: "Shrikhand";
+}
+.banner {
+  display: flex;
+  margin-bottom: -4em;
+}
+
+.picture {
+  object-fit: cover;
+}
+
+.cutlery {
+  width: 1rem;
+  height: 1rem;
+}
+.hands {
+  width: 1rem;
+  height: 1rem;
+}
+
+.entree {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-menu {
+  font-family: "Roboto-thin";
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 451px){
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    .picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+.text-information{
+  h3{
+    font-size: 1.2em;
+  }
+  p{
+    font-size: 1em;
+  }
+}
+}
+@media only screen and (min-width: 1248px){
+  .text-information{
+    h3{
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1.3em;
+    }
+  }
+  footer{
+    h2{
+      font-size: 1.7em;
+    }
+    a{
+      font-size: 1.3em;
+    }
+  }
+  h2{
+    font-size: 1.7rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 2000px){
+  p{
+    font-size: 1.6rem  !important;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  .text-information{
+    h3{
+      font-size: 2.2rem;
+    }
+  }
+  h3{
+    font-size: 1.7rem;
+  }
 }

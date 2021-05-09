@@ -13,6 +13,8 @@ footer > h2 {
 footer .logo {
   padding-right: 10px;
   margin: 0;
+  width: 1rem;
+  height: 1rem;
 }
 footer ul {
   list-style-type: none;
@@ -39,21 +41,18 @@ footer a {
     justify-content: space-around;
   }
 }
-.first {
-  width: 100%;
-  justify-content: center;
+@media only screen and (min-width: 2000px) {
+  footer h2 {
+    font-size: 2.4rem !important;
+  }
+  footer a {
+    font-size: 2rem !important;
+  }
+  footer .logo {
+    height: 2rem;
+    width: 2rem;
+  }
 }
-
-.second {
-  width: 80%;
-  justify-content: space-around;
-  height: 50px;
-}
-.second > .title-header {
-  margin: 0 !important;
-  font-size: 1.5em;
-}
-
 .logo-header {
   display: flex;
   align-items: center;
@@ -66,12 +65,59 @@ footer a {
   margin: 15px 0 10px 0;
 }
 
+.first {
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  width: 1rem;
+  height: 1rem;
+}
+
+.second {
+  width: 80%;
+  justify-content: space-around;
+  height: 50px;
+}
+.second > .title-header {
+  margin: 0 !important;
+  font-size: 1.5em;
+}
+
 @media only screen and (min-width: 451px) {
   .second {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px;
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  header h1 {
+    font-size: 2.5rem !important;
+  }
+  header .logo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .second {
+    height: 75px !important;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  header h1 {
+    font-size: 4rem !important;
+  }
+
+  .second {
+    height: 100px !important;
+    max-width: 550px;
+  }
+  .second .logo {
+    height: 2rem;
+    width: 2rem;
   }
 }
 .load-body {
@@ -81,7 +127,7 @@ footer a {
   flex-direction: column;
   position: fixed;
   z-index: 5;
-  background-image: linear-gradient(#FF79DA 40%, #9356DC 60%);
+  background-image: linear-gradient(#ff79da 40%, #9356dc 60%);
   width: 100%;
   height: 100%;
   animation: onandoff 3s linear forwards;
@@ -133,6 +179,105 @@ body {
   font-family: "Roboto";
 }
 
+.line {
+  border-bottom: 4px solid #99e2d0;
+  width: 40px;
+}
+
+.logo-title {
+  font-family: "Shrikhand";
+}
+
+.banner {
+  display: flex;
+  margin-bottom: -4em;
+}
+
+.picture {
+  object-fit: cover;
+}
+
+.cutlery {
+  width: 1rem;
+  height: 1rem;
+}
+
+.hands {
+  width: 1rem;
+  height: 1rem;
+}
+
+.entree {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-menu {
+  font-family: "Roboto-thin";
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 451px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+  }
+  .banner .picture {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .text-information h3 {
+    font-size: 1.2em;
+  }
+  .text-information p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1248px) {
+  .text-information h3 {
+    font-size: 1.5em;
+  }
+  .text-information p {
+    font-size: 1.3em;
+  }
+
+  footer h2 {
+    font-size: 1.7em;
+  }
+  footer a {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  p {
+    font-size: 1.6rem !important;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .text-information h3 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+}
 @keyframes onandoff {
   0% {
     opacity: 1;
@@ -168,6 +313,87 @@ body {
     transition: 400ms;
   }
 }
+.card-menu {
+  animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s;
+  -webkit-animation: fadein 2.5s;
+  -o-animation: fadein 2.5s;
+}
+
+.logo1 {
+  background-image: url(../ressources/logo/heart.svg);
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.logo1:hover {
+  background-image: url(../ressources/logo/heart-solid.svg);
+  transition: 1.5s;
+}
+
+@media only screen and (max-width: 450px) {
+  .name-menu:hover {
+    border: none;
+    outline: none;
+  }
+  .name-menu:hover .sami-test2 {
+    transform: rotate(1turn);
+  }
+  .name-menu:hover .test-sami {
+    border-radius: 0 0.8rem 0.8rem 0;
+    width: 20%;
+  }
+  .name-menu:hover .test3 {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 670px) {
+  .name-menu:hover {
+    border: none;
+    outline: none;
+  }
+  .name-menu:hover .information-menu {
+    display: none;
+  }
+  .name-menu:hover .sami-test2 {
+    width: 20%;
+    height: 80%;
+  }
+  .name-menu:hover .test-sami {
+    background-color: #99e2d0;
+    border-radius: 0 0 0.8rem 0.8rem;
+    height: 25%;
+  }
+}
+@media only screen and (min-width: 671px) {
+  .name-menu:hover {
+    border: none;
+    outline: none;
+  }
+  .name-menu:hover .information-menu {
+    display: none;
+  }
+  .name-menu:hover .sami-test2 {
+    width: 10%;
+    height: 65%;
+  }
+  .name-menu:hover .test-sami {
+    background-color: #99e2d0;
+    border-radius: 0 0 0.8rem 0.8rem;
+    height: 35%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .logo1 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .logo1 {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
 .maps-button {
   border: none;
   display: flex;
@@ -178,26 +404,24 @@ body {
   height: 0.7rem;
   background-color: transparent;
 }
-
-.name-menu {
-  display: flex;
-  cursor: pointer;
-  box-shadow: 5px 8px 12px -2px #d1d1d1;
-  border-radius: 1em;
-  background-color: white;
-  height: 60px;
-  justify-content: space-around;
-  padding: 0px;
+.maps-button .city {
   border: none;
+  background-color: transparent;
+  width: 8rem;
+}
+.maps-button .logo {
+  width: 1rem;
+  height: 1rem;
 }
 
 .exploration {
+  font-size: 1rem;
   border-radius: 5rem;
   height: 3rem;
-  width: 15em;
-  background-image: linear-gradient(#FF79DA, #9256dc);
+  width: 10rem;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
-  color: white;
+  color: #ffff;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
   display: flex;
@@ -210,39 +434,60 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
 
-@media only screen and (max-width: 450px) {
-  .name-menu {
-    width: 90%;
-  }
+.button {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }
-@media only screen and (min-width: 451px) {
-  .name-menu {
-    width: 25%;
-    height: 150px;
-    flex-direction: column;
-  }
 
+@media only screen and (min-width: 451px) {
   .name-menu-bis {
     width: 20%;
   }
 }
+@media only screen and (min-width: 2000px) {
+  .maps-button .logo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .exploration {
+    font-size: 2rem !important;
+    width: 25rem !important;
+    height: 7rem !important;
+  }
+}
+@media only screen and (min-width: 1248px) and (max-width: 1999px) {
+  .exploration {
+    height: 5rem;
+    font-size: 1.2rem !important;
+    width: 14rem;
+  }
+}
+.restaurant-reservation .exploration {
+  font-size: 0.8rem;
+}
+
 @media only screen and (max-width: 450px) {
-  .dessert {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
+  .restaurant > h2 {
+    margin-left: 25px;
   }
 
-  .starter {
+  .category {
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 25%;
+  }
+  .category .title-menu {
+    margin-left: 20px;
+  }
+  .category .line {
+    margin: 5px 0 0 22px;
   }
 
-  .main-courses {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
+  .category-bis {
+    height: 30% !important;
   }
 
   .choice-list {
@@ -273,6 +518,17 @@ body {
   justify-content: space-around;
   border-radius: 3em 3em 0 0;
 }
+.menu-restaurant .title {
+  justify-content: space-around;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.menu-restaurant .title > h2 {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 500;
+}
 
 /*
 .menu {
@@ -280,68 +536,36 @@ body {
   flex-direction: column;
 }*/
 @media only screen and (min-width: 451px) {
-  .starter {
+  .restaurant {
+    align-items: center;
+    height: 550px;
+  }
+
+  .category {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .main-courses {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .line {
+    margin-bottom: 20px;
   }
 
-  .dessert {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .menu-restaurant {
+    height: 950px;
+  }
+  .menu-restaurant .title {
+    justify-content: space-around;
+    align-self: center;
+    width: 30%;
+    max-width: 500px;
+    min-width: 300px;
+  }
+  .menu-restaurant .title > .logo {
+    margin: 25px 10px 0 0;
   }
 }
-.logo1 {
-  background-image: url(../ressources/logo/heart.svg);
-  height: 1.3rem;
-  width: 1.3rem;
-}
-.logo1:hover {
-  background-image: url(../ressources/logo/heart-solid.svg);
-  transition: 1.5s;
-  height: 1.3rem;
-  width: 1.3rem;
-}
-
-.line {
-  border-bottom: 4px solid #99e2d0;
-  width: 40px;
-}
-
-.card-menu {
-  animation: fadein 2.5s;
-  -moz-animation: fadein 2.5s;
-  -webkit-animation: fadein 2.5s;
-  -o-animation: fadein 2.5s;
-}
-
-.test {
-  display: flex;
-  font-weight: 600;
-  padding-bottom: 10px;
-}
-
-.logo-title {
-  font-family: "Shrikhand";
-}
-
-.banner {
-  display: flex;
-  margin-bottom: -4em;
-}
-
-.logo {
-  height: 1rem;
-  width: 1rem;
-}
-
+/*research section*/
 .localisation {
   background-color: #ebebeb;
 }
@@ -351,8 +575,7 @@ body {
   width: 100%;
   height: 40px;
 }
-
-.city {
+.localisation .localisation-form .city {
   border: none;
   background-color: transparent;
   width: 8rem;
@@ -379,293 +602,7 @@ body {
   color: gray;
 }
 
-.choice-list .all-card {
-  display: flex;
-  padding-left: 0px;
-  align-items: center;
-  justify-content: space-around;
-  height: 70%;
-}
-.choice-list .all-card .card-choice {
-  background-color: #f5f5f5;
-  border: transparent;
-  border-radius: 1.2rem;
-  display: flex;
-  align-items: center;
-}
-
-.pastille {
-  width: 1.5rem;
-  height: 1.4rem;
-  background-color: #9356dc;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  transform: translateX(-10px);
-  font-size: 0.9em;
-}
-
-.informations {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-}
-.informations > .logo-card {
-  height: 1.5em;
-  width: 1.5em;
-}
-.informations > .text-information {
-  width: 80%;
-  font: 1em;
-  font-family: "Roboto";
-  font-weight: bolder;
-}
-
-.link {
-  height: 200px;
-  text-decoration: none;
-  border-radius: 1rem;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-.link > .card {
-  border-radius: 1rem 1rem 0 0;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
-.link > .card > .picture {
-  border-radius: 1rem 1rem 0 0;
-  height: 100%;
-  object-fit: cover;
-}
-
-.picture {
-  object-fit: cover;
-}
-
-.new {
-  position: absolute;
-  background-color: #99e2d0;
-  color: green;
-  position: absolute;
-  background-color: #99e2d0;
-  color: green;
-  display: flex;
-  border-radius: 0.2rem;
-  top: 15px;
-  right: 15px;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 30px;
-  font-weight: 600;
-  font-size: 0.9em;
-}
-
-.all-card {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card-info {
-  display: flex;
-  height: 30%;
-  justify-content: space-between;
-  color: black;
-  align-items: center;
-  padding: 10px 20px 10px 10px;
-}
-.card-info > .text-information {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-}
-.card-info > .text-information > h3 {
-  margin: 0 0 5px 0;
-  font-weight: 900;
-  font-family: "Roboto-bold";
-}
-.card-info > .text-information > p {
-  margin: 0 0 5px 0;
-  font-weight: bold;
-  font-family: "Roboto-thin";
-}
-
-.cutlery {
-  width: 1rem;
-  height: 1rem;
-}
-
-.hands {
-  width: 1rem;
-  height: 1rem;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-}
-.title > h2 {
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 500;
-}
-
-.entree {
-  display: flex;
-  flex-direction: column;
-}
-
-.information-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.information-menu > .text {
-  font-family: "Roboto-thin";
-  font-size: 0.8em;
-  width: 100%;
-  font-weight: 600;
-}
-
-.text {
-  margin: 0;
-  font-family: "Roboto";
-  display: flex;
-  font-size: 0.9em;
-}
-
-.title-menu {
-  font-family: "Roboto-thin";
-  margin-bottom: 0;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  align-items: center;
-}
-
-@media only screen and (max-width: 450px) {
-  .test {
-    align-items: flex-end;
-    padding-right: 20px;
-    width: 10%;
-  }
-
-  .text {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: left;
-    display: block;
-    overflow: hidden;
-  }
-
-  .line {
-    margin: 5px 0 0 22px;
-  }
-
-  .picture {
-    width: 100%;
-  }
-
-  .test3 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    transition: all 900ms ease-in-out;
-  }
-
-  .name-menu:hover {
-    border: none;
-    outline: none;
-  }
-  .name-menu:hover .sami-test2 {
-    transform: rotate(1turn);
-  }
-  .name-menu:hover .test-sami {
-    border-radius: 0 0.8rem 0.8rem 0;
-    width: 20%;
-  }
-  .name-menu:hover .test3 {
-    width: 60%;
-  }
-
-  .test-sami {
-    width: 0%;
-    font-size: 100rem;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    transition: all 1100ms ease-in-out;
-    background-color: #99e2d0;
-  }
-
-  .sami-test {
-    width: 50%;
-    height: 50%;
-  }
-
-  .sami-test2 {
-    border-radius: 100%;
-    height: 30%;
-    width: 30%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1300ms ease-in-out;
-  }
-
-  .all-card {
-    flex-direction: column;
-  }
-
-  .card-choice {
-    width: 90%;
-    height: 60px;
-  }
-
-  .card-restaurant {
-    height: 900px;
-  }
-
-  .link {
-    width: 90%;
-  }
-
-  .title {
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-
-  .card-menu {
-    height: 300px;
-  }
-
-  .restaurant > h2 {
-    margin-left: 25px;
-  }
-
-  .title-menu {
-    margin-left: 20px;
-  }
-}
+/*end research section*/
 @media only screen and (min-width: 451px) and (max-width: 1023px) {
   .choice-list {
     height: 300px;
@@ -676,120 +613,6 @@ body {
   .choice-list > h2 {
     width: 100%;
     text-align: center;
-  }
-
-  .card-choice {
-    width: 35%;
-  }
-}
-@media only screen and (min-width: 451px) {
-  .test {
-    justify-content: center;
-  }
-
-  .line {
-    margin-bottom: 20px;
-  }
-
-  .test3 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    transition: all 2000ms ease-in-out;
-  }
-
-  .sami-test {
-    height: 50%;
-    width: 50%;
-  }
-
-  .sami-test2 {
-    border-radius: 100%;
-    height: 0%;
-    width: 0%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 2000ms ease-in-out;
-  }
-
-  .name-menu:hover {
-    border: none;
-    outline: none;
-  }
-  .name-menu:hover .sami-test2 {
-    width: 10%;
-    height: 80%;
-  }
-  .name-menu:hover .test-sami {
-    background-color: #99e2d0;
-    border-radius: 0 0 0.8rem 0.8rem;
-    height: 25%;
-  }
-
-  .test-sami {
-    width: 100%;
-    font-size: 100rem;
-    height: 1px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    transition: all 2000ms ease-in-out;
-  }
-
-  .banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 250px;
-    align-items: center;
-  }
-  .banner .picture {
-    width: 100%;
-    height: 100%;
-  }
-
-  .restaurant {
-    align-items: center;
-    height: 550px;
-  }
-
-  .card-restaurant {
-    flex-wrap: wrap;
-    height: 80%;
-  }
-
-  .link {
-    width: 45%;
-  }
-
-  .title {
-    justify-content: space-around;
-    align-self: center;
-    width: 30%;
-    max-width: 350px;
-    min-width: 300px;
-  }
-  .title > .logo {
-    margin: 25px 10px 0 0;
-  }
-
-  .text {
-    justify-content: center;
-    margin-bottom: 5px;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .menu-restaurant {
-    height: 950px;
-  }
-
-  .card-choice {
-    height: 65px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -809,12 +632,381 @@ body {
     margin: 0;
   }
 
-  .link {
+  .card-choice {
     width: 20%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .menu-restaurant {
+    height: 1350px !important;
+  }
+
+  .localisation .localisation-form {
+    height: 60px;
+  }
+  .localisation .localisation-form .city {
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .restaurant-reservation {
+    height: 400px;
+  }
+
+  .choice-list {
+    height: 300px;
+  }
+
+  .restaurant {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .card-restaurant {
+    height: 900px;
+  }
+
+  .sami-test {
+    width: 50%;
+    height: 50%;
   }
 
   .card-choice {
+    width: 90%;
+    height: 60px;
+  }
+
+  .all-card {
+    flex-direction: column;
+  }
+
+  .link {
+    width: 90%;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .card-menu {
+    height: 300px;
+  }
+
+  .name-menu {
+    width: 90%;
+    height: 60px;
+  }
+  .name-menu .information-menu .text {
+    font-size: 0.75rem !important;
+  }
+  .name-menu .test3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 900ms ease-in-out;
+  }
+  .name-menu .test3 .text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+  .name-menu .test {
+    align-items: flex-end;
+    padding-right: 20px;
+    width: 10%;
+  }
+  .name-menu .test-sami {
+    width: 0%;
+    font-size: 100rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 1100ms ease-in-out;
+    background-color: #99E2D0;
+  }
+  .name-menu .test-sami .sami-test2 {
+    border-radius: 100%;
+    height: 30%;
+    width: 30%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1300ms ease-in-out;
+  }
+}
+@media only screen and (min-width: 451px) {
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .information-menu .text {
+    font-size: 0.7rem;
+  }
+
+  .sami-test {
+    height: 50%;
+    width: 50%;
+  }
+
+  .sami-test2 {
+    border-radius: 100%;
+    height: 0%;
+    width: 0%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2000ms ease-in-out;
+  }
+
+  .card-restaurant {
+    flex-wrap: wrap;
+    height: 80%;
+  }
+
+  .card-choice {
+    height: 65px;
+  }
+
+  .name-menu {
     width: 20%;
+    height: 150px;
+    flex-direction: column;
+  }
+  .name-menu .test3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    transition: all 2000ms ease-in-out;
+  }
+  .name-menu .test3 .text {
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  .name-menu .test {
+    justify-content: center;
+  }
+  .name-menu .test-sami {
+    width: 100%;
+    font-size: 100rem;
+    height: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 2000ms ease-in-out;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 1023px) {
+  .link {
+    width: 45%;
+  }
+
+  .card-choice {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .test {
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .information-menu .text {
+    font-size: 1rem;
+  }
+
+  .link {
+    width: 20%;
+  }
+}
+.choice-list .all-card {
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  justify-content: space-around;
+  height: 70%;
+}
+.choice-list .all-card .card-choice {
+  background-color: #f5f5f5;
+  border: transparent;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.choice-list .all-card .card-choice .pastille {
+  width: 1.5rem;
+  height: 1.4rem;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transform: translateX(-10px);
+  font-size: 0.9em;
+}
+.choice-list .all-card .card-choice .informations {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.choice-list .all-card .card-choice .informations > .logo-card {
+  height: 1.5em;
+  width: 1.5em;
+}
+.choice-list .all-card .card-choice .informations > .text-information {
+  width: 80%;
+  font-size: 1em;
+  font-family: "Roboto";
+  font-weight: bolder;
+}
+.choice-list .all-card .card-choice .informations .logo {
+  height: 1rem;
+  width: 1rem;
+}
+
+.all-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name-menu {
+  display: flex;
+  cursor: pointer;
+  box-shadow: 5px 8px 12px -2px #d1d1d1;
+  border-radius: 1em;
+  background-color: #ffff;
+  justify-content: space-around;
+  padding: 0px;
+  border: none;
+}
+.name-menu .text {
+  margin: 0;
+  font-family: "Roboto";
+  display: flex;
+}
+.name-menu .information-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name-menu .information-menu > .text {
+  font-family: "Roboto-thin";
+  width: 95%;
+  font-weight: 600;
+}
+.name-menu .test {
+  display: flex;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.link {
+  height: 200px;
+  text-decoration: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+}
+.link > .card {
+  border-radius: 1rem 1rem 0 0;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.link > .card > .picture {
+  border-radius: 1rem 1rem 0 0;
+  height: 100%;
+  object-fit: cover;
+}
+.link > .card .new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: green;
+  position: absolute;
+  background-color: #99E2D0;
+  color: green;
+  display: flex;
+  border-radius: 0.2rem;
+  top: 15px;
+  right: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.link .card-info {
+  display: flex;
+  height: 30%;
+  justify-content: space-between;
+  color: black;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+}
+.link .card-info > .text-information {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.link .card-info > .text-information > h3 {
+  margin: 0 0 5px 0;
+  font-weight: 900;
+  font-family: "Roboto-bold";
+}
+.link .card-info > .text-information > p {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  font-family: "Roboto-thin";
+}
+
+@media only screen and (min-width: 2000px) {
+  .card-choice {
+    height: 100px;
+  }
+  .card-choice .pastille {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+
+  .link {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .test {
+    font-size: 1.5rem !important;
+  }
+
+  .name-menu {
+    height: 200px !important;
   }
 }
 
