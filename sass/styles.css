@@ -335,14 +335,14 @@ body {
     border: none;
     outline: none;
   }
-  .name-menu:hover .sami-test2 {
+  .name-menu:hover .cercle-validation {
     transform: rotate(1turn);
   }
-  .name-menu:hover .test-sami {
+  .name-menu:hover .bloc-validation {
     border-radius: 0 0.8rem 0.8rem 0;
     width: 20%;
   }
-  .name-menu:hover .test3 {
+  .name-menu:hover .informations-dishes {
     width: 60%;
   }
 }
@@ -354,11 +354,11 @@ body {
   .name-menu:hover .information-menu {
     display: none;
   }
-  .name-menu:hover .sami-test2 {
+  .name-menu:hover .cercle-validation {
     width: 20%;
     height: 80%;
   }
-  .name-menu:hover .test-sami {
+  .name-menu:hover .bloc-validation {
     background-color: #99e2d0;
     border-radius: 0 0 0.8rem 0.8rem;
     height: 25%;
@@ -372,11 +372,11 @@ body {
   .name-menu:hover .information-menu {
     display: none;
   }
-  .name-menu:hover .sami-test2 {
+  .name-menu:hover .cercle-validation {
     width: 10%;
     height: 65%;
   }
-  .name-menu:hover .test-sami {
+  .name-menu:hover .bloc-validation {
     background-color: #99e2d0;
     border-radius: 0 0 0.8rem 0.8rem;
     height: 35%;
@@ -666,7 +666,7 @@ body {
     height: 900px;
   }
 
-  .sami-test {
+  .validation {
     width: 50%;
     height: 50%;
   }
@@ -699,7 +699,7 @@ body {
   .name-menu .information-menu .text {
     font-size: 0.75rem !important;
   }
-  .name-menu .test3 {
+  .name-menu .informations-dishes {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -707,7 +707,7 @@ body {
     padding: 10px;
     transition: all 900ms ease-in-out;
   }
-  .name-menu .test3 .text {
+  .name-menu .informations-dishes .text {
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
@@ -715,12 +715,12 @@ body {
     overflow: hidden;
     font-size: 1rem;
   }
-  .name-menu .test {
+  .name-menu .price {
     align-items: flex-end;
     padding-right: 20px;
     width: 10%;
   }
-  .name-menu .test-sami {
+  .name-menu .bloc-validation {
     width: 0%;
     font-size: 100rem;
     height: 100%;
@@ -730,7 +730,7 @@ body {
     transition: all 1100ms ease-in-out;
     background-color: #99E2D0;
   }
-  .name-menu .test-sami .sami-test2 {
+  .name-menu .bloc-validation .cercle-validation {
     border-radius: 100%;
     height: 30%;
     width: 30%;
@@ -750,12 +750,12 @@ body {
     font-size: 0.7rem;
   }
 
-  .sami-test {
+  .validation {
     height: 50%;
     width: 50%;
   }
 
-  .sami-test2 {
+  .cercle-validation {
     border-radius: 100%;
     height: 0%;
     width: 0%;
@@ -780,7 +780,7 @@ body {
     height: 150px;
     flex-direction: column;
   }
-  .name-menu .test3 {
+  .name-menu .informations-dishes {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -788,16 +788,16 @@ body {
     width: 100%;
     transition: all 2000ms ease-in-out;
   }
-  .name-menu .test3 .text {
+  .name-menu .informations-dishes .text {
     justify-content: center;
     margin-bottom: 5px;
     padding: 5px;
     text-align: center;
   }
-  .name-menu .test {
+  .name-menu .price {
     justify-content: center;
   }
-  .name-menu .test-sami {
+  .name-menu .bloc-validation {
     width: 100%;
     font-size: 100rem;
     height: 1px;
@@ -817,7 +817,7 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .test {
+  .price {
     font-size: 1.1rem;
   }
 
@@ -912,7 +912,7 @@ body {
   width: 95%;
   font-weight: 600;
 }
-.name-menu .test {
+.name-menu .price {
   display: flex;
   font-weight: 600;
   padding-bottom: 10px;
@@ -1001,7 +1001,7 @@ body {
     font-size: 1.8rem;
   }
 
-  .test {
+  .price {
     font-size: 1.5rem !important;
   }
 

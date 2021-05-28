@@ -54,14 +54,14 @@
   .name-menu:hover {
     border: none;
     outline: none;
-    .sami-test2 {
+    .cercle-validation {
       transform: rotate(1turn);
     }
-    .test-sami {
+    .bloc-validation {
       border-radius: 0 0.8rem 0.8rem 0;
       width: 20%;
     }
-    .test3 {
+    .informations-dishes {
       width: 60%;
     }
   }
@@ -74,11 +74,11 @@
       display: none;
     }
 
-    .sami-test2 {
+    .cercle-validation {
       width: 20%;
       height: 80%;
     }
-    .test-sami {
+    .bloc-validation {
       background-color: #99e2d0;
       border-radius: 0 0 0.8rem 0.8rem;
       height: 25%;
@@ -92,11 +92,11 @@
 .information-menu{
   display: none;
 }
-    .sami-test2 {
+    .cercle-validation {
       width: 10%;
       height: 65%;
     }
-    .test-sami {
+    .bloc-validation {
       background-color: #99e2d0;
       border-radius: 0 0 0.8rem 0.8rem;
       height: 35%;
