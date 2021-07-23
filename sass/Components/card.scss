@@ -1,0 +1,336 @@
+@import "../Utils/variables.scss";
+@media only screen and (max-width: 450px) {
+  .card-restaurant {
+    height: 900px;
+  }
+  .validation {
+    width: 50%;
+    height: 50%;
+  }
+
+  .card-choice {
+    width: 90%;
+    height: 60px;
+  }
+  .all-card {
+    flex-direction: column;
+  }
+  .link {
+    width: 90%;
+  }
+  .picture {
+    width: 100%;
+  }
+  .card-menu {
+    height: 300px;
+  }
+  .name-menu {
+    width: 90%;
+    height: 60px;
+    .information-menu{
+      .text{
+        font-size: 0.75rem !important;
+      }
+    }
+    .informations-dishes {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+      transition: all 900ms ease-in-out;
+      .text {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+        display: block;
+        overflow: hidden;
+        font-size: 1rem;
+      }
+    }
+    .price {
+      align-items: flex-end;
+      padding-right: 20px;
+      width: 10%;
+    }
+    .bloc-validation {
+      width: 0%;
+      font-size: 100rem;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: all 1100ms ease-in-out;
+      background-color: $color-tertiary;
+      .cercle-validation {
+        border-radius: 100%;
+        height: 30%;
+        width: 30%;
+        background-color: $color-background-card;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1300ms ease-in-out;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 451px) {
+  .text {
+    font-size: 0.9rem;
+  }
+  .information-menu{
+    .text{
+      font-size: 0.7rem;
+    }
+  }
+  .validation {
+    height: 50%;
+    width: 50%;
+  }
+  .cercle-validation {
+    border-radius: 100%;
+    height: 0%;
+    width: 0%;
+    background-color: $color-background-card;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2000ms ease-in-out;
+  }
+  .card-restaurant {
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  .card-choice {
+    height: 65px;
+  }
+  .name-menu {
+    width: 20%;
+    height: 150px;
+    flex-direction: column;
+    .informations-dishes {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      transition: all 2000ms ease-in-out;
+      .text {
+        justify-content: center;
+        margin-bottom: 5px;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+    .price {
+      justify-content: center;
+    }
+    .bloc-validation {
+      width: 100%;
+      font-size: 100rem;
+      height: 1px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: all 2000ms ease-in-out;
+    }
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 1023px) {
+  .link {
+    width: 45%;
+  }
+  .card-choice {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .price{
+    font-size: 1.1rem;
+  }
+  .text{
+    font-size: 1.2rem;
+  }
+  .information-menu{
+    .text{
+      font-size: 1rem;
+    }
+  }
+  .link {
+    width: 20%;
+  }
+}
+.choice-list {
+  .all-card {
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+    .card-choice {
+      background-color: #f5f5f5;
+      border: transparent;
+      border-radius: 1.2rem;
+      display: flex;
+      align-items: center;
+      .pastille {
+        width: 1.5rem;
+        height: 1.4rem;
+        background-color: $color-primary;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        transform: translateX(-10px);
+        font-size: 0.9em;
+      }
+      .informations {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        > .logo-card {
+          height: 1.5em;
+          width: 1.5em;
+        }
+        > .text-information {
+          width: 80%;
+          font-size: 1em;
+          font-family: "Roboto";
+          font-weight: bolder;
+        }
+        .logo {
+          height: 1rem;
+          width: 1rem;
+        }
+      }
+    }
+  }
+}
+.all-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.name-menu {
+  display: flex;
+  cursor: pointer;
+  box-shadow: 5px 8px 12px -2px #d1d1d1;
+  border-radius: 1em;
+  background-color: $color-background-card;
+  justify-content: space-around;
+  padding: 0px;
+  border: none;
+  .text {
+    margin: 0;
+    font-family: "Roboto";
+    display: flex;
+  }
+  .information-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .text {
+      font-family: "Roboto-thin";
+      width: 95%;
+      font-weight: 600;
+    }
+  }
+  .price {
+    display: flex;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+}
+.link {
+  height: 200px;
+  text-decoration: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 20%);
+  background-color: $color-background-card;
+  display: flex;
+  flex-direction: column;
+  > .card {
+    border-radius: 1rem 1rem 0 0;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    > .picture {
+      border-radius: 1rem 1rem 0 0;
+      height: 100%;
+      object-fit: cover;
+    }
+    .new {
+      position: absolute;
+      background-color: $color-tertiary;
+      color: green;
+      position: absolute;
+      background-color: $color-tertiary;
+      color: green;
+      display: flex;
+      border-radius: 0.2rem;
+      top: 15px;
+      right: 15px;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 30px;
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+  }
+  .card-info {
+    display: flex;
+    height: 30%;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+
+    > .text-information {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      > h3 {
+        margin: 0 0 5px 0;
+        font-weight: 900;
+        font-family: "Roboto-bold";
+      }
+      > p {
+        margin: 0 0 5px 0;
+        font-weight: bold;
+        font-family: "Roboto-thin";
+      }
+    }
+  }
+}
+@media only screen and (min-width: 2000px){
+  .card-choice{
+    height: 100px;
+    .pastille{
+      height: 2rem !important;
+      width: 2rem !important;
+    }
+  }
+  .link{
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .text{
+    font-size: 1.8rem;
+  }
+  .price{
+    font-size: 1.5rem !important;
+  }
+  .name-menu{
+    height: 200px !important;
+  }
+}

@@ -1,0 +1,82 @@
+@import "../Utils/variables.scss";
+.maps-button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  .icon-maps {
+    height: 0.7rem;
+
+    background-color: transparent;
+  }
+  .city {
+    border: none;
+    background-color: transparent;
+    width: 8rem;
+  }
+  .logo {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.exploration {
+  font-size: 1rem;
+  border-radius: 5rem;
+  height: 3rem;
+  width: 10rem;
+  background-image: linear-gradient($color-secondary, $color-primary);
+  border: none;
+  color: $color-text;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(#ff8de0, #9d67e0);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 75%);
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+@media only screen and (min-width: 451px) {
+  .name-menu-bis {
+    width: 20%;
+  }
+  .restaurant-reservation {
+    .exploration {
+    }
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .maps-button {
+    .logo {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .exploration {
+    font-size: 2rem !important;
+    width: 25rem !important;
+    height: 7rem !important;
+  }
+}
+@media only screen and (min-width: 1248px) and (max-width: 1999px){
+  .exploration {
+    height: 5rem;
+    font-size: 1.2rem !important;
+    width: 14rem;
+  }
+}
+
+.restaurant-reservation {
+  .exploration {
+    font-size: 0.8rem;
+  }
+}

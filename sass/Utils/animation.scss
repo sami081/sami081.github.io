@@ -1,0 +1,119 @@
+@keyframes onandoff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+  }
+}
+@keyframes bloc {
+  0% {
+    margin-left: -200px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+
+  100% {
+    margin-left: 500px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transition: 400ms;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transition: 400ms;
+  }
+}
+.card-menu {
+  animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s;
+  -webkit-animation: fadein 2.5s;
+  -o-animation: fadein 2.5s;
+}
+.logo1 {
+  background-image: url(../ressources/logo/heart.svg);
+  height: 1.3rem;
+  width: 1.3rem;
+  &:hover {
+    background-image: url(../ressources/logo/heart-solid.svg);
+    transition: 1.5s;
+    
+  }
+}
+@media only screen and (max-width: 450px) {
+  .name-menu:hover {
+    border: none;
+    outline: none;
+    .cercle-validation {
+      transform: rotate(1turn);
+    }
+    .bloc-validation {
+      border-radius: 0 0.8rem 0.8rem 0;
+      width: 20%;
+    }
+    .informations-dishes {
+      width: 60%;
+    }
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 670px) {
+  .name-menu:hover {
+    border: none;
+    outline: none;
+    .information-menu {
+      display: none;
+    }
+
+    .cercle-validation {
+      width: 20%;
+      height: 80%;
+    }
+    .bloc-validation {
+      background-color: #99e2d0;
+      border-radius: 0 0 0.8rem 0.8rem;
+      height: 25%;
+    }
+  }
+}
+@media only screen and (min-width: 671px) {
+  .name-menu:hover {
+    border: none;
+    outline: none;
+.information-menu{
+  display: none;
+}
+    .cercle-validation {
+      width: 10%;
+      height: 65%;
+    }
+    .bloc-validation {
+      background-color: #99e2d0;
+      border-radius: 0 0 0.8rem 0.8rem;
+      height: 35%;
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px){
+  .logo1{
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+}
+@media only screen and (min-width: 1024px){
+.logo1 {
+    width: 1.7rem;
+    height: 1.7rem;
+    
+}
+}
