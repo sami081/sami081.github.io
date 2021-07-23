@@ -11,7 +11,7 @@ let affichage = function(){
 }
 let temp = 0;
 let decrement = function(){
-  for (let i = 60; i > -1; i--){
+  for (let i = 70; i > -1; i--){
     setTimeout((function(s){
       return  function(){
         decompte(s);
@@ -52,9 +52,9 @@ bubble.style.setProperty("--left", Math.random() * 100  + "%");
 bubble.addEventListener("click", () =>{
   counter++;
   counterDisplay.textContent = counter;
-  if (counter>40) {
-    if (confirm("BRAVO Vous avez terminer le niveau 1 voulez vous continuer?")) {
-      window.open("./index2.html");
+  if (counter>60) {
+    if (confirm("BRAVO Vous avez terminer le niveau 3 voulez vous continuer?")) {
+      window.open("./index4.html");
       window.close()
 
     }
@@ -76,4 +76,4 @@ setTimeout(()=>{
 setInterval(bubbleMaker, 500);
 setTimeout(()=>{
   window.close()
-},70000)
+},80000)

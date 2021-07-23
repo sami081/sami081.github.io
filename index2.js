@@ -52,9 +52,9 @@ bubble.style.setProperty("--left", Math.random() * 100  + "%");
 bubble.addEventListener("click", () =>{
   counter++;
   counterDisplay.textContent = counter;
-  if (counter>40) {
+  if (counter>50) {
     if (confirm("BRAVO Vous avez terminer le niveau 1 voulez vous continuer?")) {
-      window.open("./index2.html");
+      window.open("./index3.html");
       window.close()
 
     }
