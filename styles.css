@@ -1,98 +1,42 @@
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+body{
+  overflow: hidden;
+  min-height: 100vh;
+  cursor: crosshair;
   margin: 0;
-  padding: 0;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
 }
-
-ul {
-  list-style: none;
+.bubble{
+  position: absolute;
+  border-radius: 100%;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: anim 8s forwards; 
+  filter: hue-rotate(0deg);
 }
-
-button, input, select {
-  margin: 0;
+@keyframes anim{
+  to{
+    top: -250px;
+    left: var(--left);
+    opacity: 1;
+    filter: hue-rotate(720deg);
+  }
 }
-
-html {
-  box-sizing: border-box;
+h3 {
+  font-size: 10rem;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(128, 128, 128 , 0.555);
 }
-
-*, *::before, *::after {
-  box-sizing: inherit;
+h1{
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+  color: aqua;
 }
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  padding: 0;
-}
-
-body {
-  background: #fff;
-}
-
-p {
+.chrono{
+  font-size: 5rem;
+  
   color: black;
-  margin: 10px;
+  
+  text-align: center;
 }
-
-.table {
-  width: 100%;
-}
-.table td {
-  border: solid 1px #ccc;
-}
-.table thead {
-  background-color: #000;
-  background-repeat: no-repeat;
-  color: #fff;
-}
-
-.btn, .card-action, .btn-danger, .card-cancel, .call-to-action {
-  background: greenyellow;
-}
-
-.btn, .card-action, .btn-danger, .card-cancel, .call-to-action {
-  border-radius: 23px;
-  padding: 5px 12px;
-  color: #ffff;
-}
-.btn:hover, .card-action:hover, .btn-danger:hover, .card-cancel:hover, .call-to-action:hover {
-  background: #43629b;
-}
-
-.btn-danger, .card-cancel {
-  background: red;
-}
-.btn-danger:hover, .card-cancel:hover {
-  background: greenyellow;
-}
-
-.card {
-  padding: 10px;
-  box-shadow: 0px 1px 5px black;
-  border-radius: 3px;
-}
-
-.card-actions {
-  display: flex;
-  margin: 50px;
-}
-
-/*# sourceMappingURL=styles.css.map */
