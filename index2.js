@@ -50,10 +50,13 @@ bubble.style.left = Math.random() * 100 + "%";
 bubble.style.setProperty("--left", Math.random() * 100  + "%");
 
 bubble.addEventListener("click", () =>{
+  const audio = new Audio();
+  audio.src = "m.mp3";
+  audio.play();
   counter++;
   counterDisplay.textContent = counter;
   if (counter>50) {
-    if (confirm("BRAVO Vous avez terminer le niveau 1 voulez vous continuer?")) {
+    if (confirm("BRAVO Vous avez terminer le niveau 2 voulez vous continuer?")) {
       window.open("./index3.html");
       window.close()
 

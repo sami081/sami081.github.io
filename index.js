@@ -34,7 +34,7 @@ bubble.classList.add("bubble");
 //le span apparait dansle body
 document.body.appendChild(bubble);
 //création dune constante qui permet d avoir une taille aleatoire entre 100 et 300
-const size = Math.random() * 200 + 100 + "px";
+let size =Math.round( Math.PI*(Math.random()) )* 50  + 50 + "px";
 // injection du style a la const bubble
 bubble.style.height = size;
 bubble.style.width = size;
@@ -42,6 +42,8 @@ bubble.style.width = size;
 // le Math.random n'est pas dans une const car on veut que le top et la left ont des valeurs differentes
 bubble.style.top = Math.random() *100 + 50 + "%";
 bubble.style.left = Math.random() * 100 + "%";
+//bubble.textContent = size;
+bubble.style.color = "white";
 
 // action pour que la bulle va aléatoirement a gauche ou a droite
 // si le math.random est supperieur a 0.5 alor 1 sinon -1
@@ -49,9 +51,18 @@ bubble.style.left = Math.random() * 100 + "%";
 
 bubble.style.setProperty("--left", Math.random() * 100  + "%");
 
+
+
 bubble.addEventListener("click", () =>{
+  
+    const audio = new Audio();
+    audio.src = "m.mp3";
+    audio.play();
+  
+  
   counter++;
   counterDisplay.textContent = counter;
+  
   if (counter>40) {
     if (confirm("BRAVO Vous avez terminer le niveau 1 voulez vous continuer?")) {
       window.open("./index2.html");
@@ -65,7 +76,7 @@ bubble.addEventListener("click", () =>{
   }
  
   
-  
+ 
   bubble.remove();
 })
 setTimeout(()=>{
