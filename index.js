@@ -1,14 +1,26 @@
 //création dune constante qui aura comme valeur les ballons tirés
+const text = document.getElementById("end");
 const counterDisplay = document.querySelector("h3");
 let counter = 0;
 const btn = document.querySelector("#btn");
 const goal = document.querySelector("#goal");
+
 let decompte = function(i){
   document.getElementById("decompte").innerHTML = i + "s";
 }
 let affichage = function(){
-  document.getElementById("decompte").innerHTML ="Game Over"
-}
+ text.innerHTML =`
+  <h3>Game Over</h3>
+  <p>Rejouer</p>
+  <ul>
+  <li><a href="./index.html">oui</a></li>
+  <li><a href ="https://www.google.fr/">Non</a><li>
+  </ul>
+ `
+bubble.remove()
+ }
+
+
 let temp = 0;
 let decrement = function(){
   for (let i = 60; i > -1; i--){
@@ -20,10 +32,11 @@ let decrement = function(){
 
     temp += 1000 ;
   }
+  
 }
 decrement();
 
-setTimeout(affichage, temp-1000);
+setTimeout(affichage,temp-1000);
 
 //création de la fonction qui va jouer tout le reste du code
 const bubbleMaker = () =>{
@@ -63,16 +76,15 @@ bubble.addEventListener("click", () =>{
   counter++;
   counterDisplay.textContent = counter;
   
-  if (counter>40) {
-    if (confirm("BRAVO Vous avez terminer le niveau 1 voulez vous continuer?")) {
-      window.open("./index2.html");
-      window.close()
-
-    }
-    else {
-    alert("a bientot")
-    window.open("https://www.google.fr/")
-    }
+  if (counter>=40) {
+    text.innerHTML =`
+    <h3>Gagné</h3>
+  
+    <ul>
+    <li><a href="./index2.html">Passez au niveau 2</a></li>
+    <li><a href ="https://www.google.fr/">quitter</a><li>
+    </ul>
+   `;
   }
  
   
@@ -85,6 +97,17 @@ setTimeout(()=>{
 };
 
 setInterval(bubbleMaker, 500);
+// if( confirm("voulez vous recommencer?")){ window.open("./index1.html");
+//  window.close()
+
+// }
+// else {
+// alert("a bientot")
+// window.open("https://www.google.fr/")
+// window.close()
+
+//  }
+
 setTimeout(()=>{
-  window.close()
-},70000)
+ bubble.remove();
+},62000);

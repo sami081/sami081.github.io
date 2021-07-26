@@ -1,4 +1,5 @@
 //création dune constante qui aura comme valeur les ballons tirés
+const text = document.getElementById("end");
 const counterDisplay = document.querySelector("h3");
 let counter = 0;
 const btn = document.querySelector("#btn");
@@ -7,7 +8,15 @@ let decompte = function(i){
   document.getElementById("decompte").innerHTML = i + "s";
 }
 let affichage = function(){
-  document.getElementById("decompte").innerHTML ="Game Over"
+  text.innerHTML =`
+  <h3>Game Over</h3>
+  <p>Rejouer</p>
+  <ul>
+  <li><a href="./index.html">oui</a></li>
+  <li><a href ="https://www.google.fr/">Non</a><li>
+  </ul>
+ `
+ bubble.remove()
 }
 let temp = 0;
 let decrement = function(){
@@ -55,16 +64,15 @@ bubble.addEventListener("click", () =>{
   audio.play();
   counter++;
   counterDisplay.textContent = counter;
-  if (counter>60) {
-    if (confirm("BRAVO Vous avez terminer le niveau 3 voulez vous continuer?")) {
-      window.open("./index4.html");
-      window.close()
-
-    }
-    else {
-    alert("a bientot")
-    window.open("https://www.google.fr/")
-    }
+  if (counter>=60) {
+    text.innerHTML =`
+    <h3>Gagné</h3>
+  
+    <ul>
+    <li><a href="./index4.html">Passez au niveau 4</a></li>
+    <li><a href ="https://www.google.fr/">quitter</a><li>
+    </ul>
+   `;
   }
  
   
