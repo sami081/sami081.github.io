@@ -14,7 +14,7 @@ body{
   position: absolute;
   border-radius: 100%;
   background: rgb(195, 255, 0);
-  opacity: 0;
+ 
   animation: anim 8s forwards; 
   filter: hue-rotate(0deg);
   display: flex;
@@ -29,7 +29,7 @@ body{
   to{
     top: -250px;
     left: var(--left);
-    opacity: 1;
+    
     filter: hue-rotate(720deg);
   }
 }
