@@ -12,7 +12,7 @@ let gameOver = false;
 
 
 function clickOnBallon(bubble) {
-  if (!gameOver && bubble.textContent>150) {
+  if (!gameOver && bubble.textContent>=45) {
     const audio = new Audio();
     audio.src = "m.mp3";
     audio.play();
@@ -22,19 +22,26 @@ function clickOnBallon(bubble) {
     counter++;
     counterDisplay.textContent = counter;
 
-    if (counter >= 70) { // Le chiffre de ballon a atteindre doit être dans une constante au dessus
+    if (counter >= 10) { // Le chiffre de ballon a atteindre doit être dans une constante au dessus
       gameOver = true;
       text.innerHTML = `
       <h3>Gagné</h3>
       <ul>
-      <li><a href="./index5.html">Passez au niveau 5</a></li>
+      <li><a href="./index.html"niveau 8 bientôt disponible</a></li>
       <li><a href ="https://www.google.fr/">quitter</a><li>
       </ul>
      `;
      clearInterval(intervalGame)
     }
 
-  }
+  }else{ const audio = new Audio();
+    audio.src = "n.mp3";
+    audio.play();
+    bubble.remove();
+
+
+    counter--;
+    counterDisplay.textContent = counter;}
 }
 
 
@@ -50,6 +57,7 @@ const bubbleMaker = () => {
   document.body.appendChild(bubble);
   //création dune constante qui permet d avoir une taille aleatoire entre 100 et 300
   let size = (Math.random()) * 200 + 100 
+  let border = (Math.random()) * 100
   // injection du style a la const bubble
   bubble.style.height = size +"px";
   bubble.style.width = size +"px";
@@ -57,8 +65,9 @@ const bubbleMaker = () => {
   // le Math.random n'est pas dans une const car on veut que le top et la left ont des valeurs differentes
   bubble.style.top = Math.random() * 100 + 50 + "%";
   bubble.style.left = Math.random() * 100 + "%";
-  bubble.textContent = size.toFixed(0);
-  bubble.style.color = "white";
+  bubble.textContent = border.toFixed(0);
+  // bubble.style.color = "white";
+  bubble.style.borderRadius = border +"%" ;
 
   // action pour que la bulle va aléatoirement a gauche ou a droite
   // si le math.random est supperieur a 0.5 alor 1 sinon -1
@@ -74,7 +83,7 @@ const bubbleMaker = () => {
 
   setTimeout(() => {
     bubble.remove();
-  }, 8000);
+  },8000);
 };
 
 
@@ -85,7 +94,7 @@ function initGame() {
 
   setTimeout(gameLost, temp - 1000);
 
-  intervalGame = setInterval(bubbleMaker, 500);
+  intervalGame = setInterval(bubbleMaker, 700);
 }
 
 
